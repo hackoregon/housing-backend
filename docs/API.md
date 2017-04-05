@@ -8,9 +8,9 @@ At this point only GET requests work, but eventually we'd like to be able to acc
 
 Currently all requests return json as a default
 
-##Endpoints
+## Endpoints
 
-#### /affordable/
+### `/affordable/`
 Lists all affordabilities in the database
 
 "Affordable" objects come with 4 pieces of info:
@@ -19,7 +19,7 @@ Lists all affordabilities in the database
 - housing_size - (Str) the size of the house
 - affordable - (Bool) True or False value if the 3 above variables are affordable or not. Measured at 30% of total income, not including utilities
 
-##### Filters:
+#### Filters:
 **housing_size**
 - "Studio"
 - "1-BR"
