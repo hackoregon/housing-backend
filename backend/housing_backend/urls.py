@@ -10,6 +10,7 @@ urlpatterns = [
     url(r'^affordable/$', views.AffordableList.as_view(), name='affordable_list'),
     url(r'^affordable/(?P<pk>[0-9]+)/$', views.AffordableDetail.as_view(), name='affordable_detail'),
     url(r'^rent/$', views.RentList.as_view(), name='rent_list'),
+    url(r'^prodvscost/$', views.ProdVsCostList.as_view(), name='prod_vs_cost'),
     url(r'^$', schema_view),
 ]
 

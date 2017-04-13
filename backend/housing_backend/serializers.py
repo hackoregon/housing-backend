@@ -23,6 +23,13 @@ class NeighborhoodSerializer(serializers.ModelSerializer):
         exclude = ('id',)
         depth = 1
 
+class ReportYearSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = ReportYear
+        exclude = ('id',)
+        depth = 1
+
 
 class AffordableSerializer(serializers.ModelSerializer):
     demographic = DemographicSerializer()
@@ -36,9 +43,27 @@ class AffordableSerializer(serializers.ModelSerializer):
 class RentSerializer(serializers.ModelSerializer):
     housing_size = HousingSizeSerializer()
     nh_id = NeighborhoodSerializer()
+    year = ReportYearSerializer()
 
     class Meta:
         model = NeighborhoodRent
-        fields = ('rent_amt', 'housing_size', 'nh_id')
+        fields = ('year', 'rent_amt', 'housing_size', 'nh_id')
+        depth = 1
+
+
+class ProdVsCostSerializer(serializers.ModelSerializer):
+    neighborhood = NeighborhoodSerializer()
+
+    class Meta:
+        model = HousingProductionVsCost
+        fields = (
+                'year',
+                'neighborhood',
+                'single_unit_growth',
+                'multi_unit_growth',
+                'home_price_growth',
+                'rent_growth'
+                )
+
 
 

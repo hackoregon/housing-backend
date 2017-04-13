@@ -117,6 +117,15 @@ class HousingPermits(models.Model):
         return template.format(nh=self.neighborhood, yr=self.report_year)
 
 
+class HousingProductionVsCost(models.Model):
+    """ Models Production, Cost, Percent Growth for viz """
+
+    year = models.ForeignKey('ReportYear', on_delete=models.CASCADE)
+    neighborhood = models.ForeignKey('Neighborhood', on_delete=models.CASCADE, help_text='Neighborhood by census tract')
+    single_unit_growth = models.FloatField(help_text="Single-family unit percent growth vs previous year")
+    multi_unit_growth = models.FloatField(help_text="Multi-family unit percent growth vs previous year")
+    home_price_growth = models.FloatField(help_text="Home price percent growth vs previous year")
+    rent_growth = models.FloatField(help_text="Rent percent growth vs previous year")
 
 
 
