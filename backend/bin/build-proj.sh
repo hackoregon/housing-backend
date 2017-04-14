@@ -9,9 +9,11 @@ echo  Running build-proj.sh...
 while getopts ":lt" opt; do
     case "$opt" in
         l)
+          echo  Running docker-compose build with local-docker-compose...
           docker-compose -f backend/local-docker-compose.yml build
           ;;
         t)
+        echo  Running docker-compose build with travis-docker-compose...
           docker-compose -f backend/travis-docker-compose.yml build
           ;;
         *)
