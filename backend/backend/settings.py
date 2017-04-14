@@ -25,9 +25,15 @@ SECRET_KEY = 'public_secret_key'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '192.168.99.100', 'hacko-integration-658279555.us-west-2.elb.amazonaws.com']
+# Note: the 192.168.99.100 enables testing with Docker Toolbox for Mac and Windows
+ALLOWED_HOSTS = ['127.0.0.1',
+                 'localhost',
+                 '192.168.99.100',
+                 'hacko-integration-658279555.us-west-2.elb.amazonaws.com',
+                 'service.civicpdx.org',
+                 'service.civicpdx.com']
 
-EC2_PRIVATE_IP  =   None    
+EC2_PRIVATE_IP  =   None
 try:
     EC2_PRIVATE_IP  =   requests.get('http://169.254.169.254/latest/meta-data/local-ipv4', timeout = 0.01).text
 except requests.exceptions.RequestException:
@@ -105,11 +111,13 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 #    'default': {
 #        'ENGINE': 'django.db.backends.postgresql_psycopg2',
 #        'NAME': 'postgres',
-#        'USER': 'postgres',
 #        'HOST': 'db',
 #        'PORT': 5432,
+#        'USER': 'postgres',
+#
 #    }
 #}
+
 DATABASES = {
     'default': {
         'ENGINE': project_config.AWS['ENGINE'],
