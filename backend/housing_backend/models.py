@@ -127,21 +127,3 @@ class HousingProductionVsCost(models.Model):
     home_price_growth = models.FloatField(help_text="Home price percent growth vs previous year")
     rent_growth = models.FloatField(help_text="Rent percent growth vs previous year")
 
-
-
-    '''
-    Tootl Tip classes
-    '''
-class toolTipPopulation(models.Mode):
-    population = models.DecimalField()
-    ethnicity = models.ForeignKey('Ethnicity', on_delete=models.CASCADE)
-    neighborhood = models.ForeignKey('Neighborhood', on_delete=models.CASCADE)
-
-    def __str__(self):
-        template = "{pp} {et} {nh}"
-        return template.format(pp=self.population, et=self.ethnicity, nh=self.neighborhood)
-
-    def __repr__(self):
-        template = "{pp} {et} {nh}"
-        return template.format(pp=self.population, et=self.ethnicity, nh=self.neighborhood)
-
