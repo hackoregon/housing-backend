@@ -19,9 +19,13 @@ before_install:
     - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
     - chmod +x ./docker-compose
     - sudo mv ./docker-compose /usr/local/bin
+install:
+  - pip install --upgrade --user awscli
+before_script:
+  - ./backend/bin/getconfig.sh
 script:
   - docker version
   - /usr/local/bin/docker-compose version
-  - ./backend/bin/test-proj.sh
-#after_success:
-#  - ./backend/bin/docker-push.sh
+  - './backend/bin/test-proj.sh -t'
+after_success:
+  - ./backend/bin/docker-push.sh

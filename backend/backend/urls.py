@@ -16,7 +16,13 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
+# This import is necessary to enable Swagger styling to work when the app runs in Docker container
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^housing_api/', include('housing_backend.urls')),
+    url(r'^housing/', include('housing_backend.urls')),
 ]
+
+# This statement is necessary to enable Swagger styling to work when the app runs in Docker container
+urlpatterns += staticfiles_urlpatterns()

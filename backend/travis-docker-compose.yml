@@ -1,0 +1,27 @@
+version: '2.1'
+services:
+#  db:
+#    image: postgres:9.5.5
+#    networks:
+#      - backend
+  housing-service:
+    environment:
+    - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+    - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+    - CONFIG_BUCKET=${CONFIG_BUCKET}
+    - DEPLOY_TARGET=${DEPLOY_TARGET}
+    - PROJ_SETTINGS_DIR=${PROJ_SETTINGS_DIR}
+    build: .
+    image: "${DOCKER_REPO}/${DEPLOY_TARGET}/${DOCKER_IMAGE}:latest"
+    command: /code/bin/docker-entrypoint.sh
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+#    networks:
+#      - backend
+#    depends_on:
+#      - db
+#networks:
+#  backend:
+#    driver: bridge
