@@ -148,3 +148,14 @@ backend/scrape/shapes/*
 backend/secrets/*
 
 backend/static
+
+
+housing_venv
+*.pyc
+.DS_Store
+.idea/*
+backend/db.sqlite3
+env.sh
+project_config.py
+static/
+staticfiles

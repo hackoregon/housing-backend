@@ -94,6 +94,7 @@ $ git branch -a
 
 Run Django and PostgreSQL:
 ```
+$ cd housing-backend/backend
 $ docker-compose up
 ```
 

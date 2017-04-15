@@ -1,27 +1,20 @@
 version: '2.1'
-
-
 services:
-
   db:
     image: postgres:9.5.5
     networks:
       - backend
-
   web:
     build: .
-    command: ./start-dev-server.sh
+    command: /code/start-dev-server.sh
     volumes:
-      - ./backend:/code
+      - .:/code
     ports:
       - "8000:8000"
     networks:
       - backend
     depends_on:
       - db
-
-
 networks:
-
   backend:
     driver: bridge
