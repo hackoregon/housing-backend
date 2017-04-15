@@ -138,10 +138,10 @@ class toolTipPopulation(models.Mode):
     neighborhood = models.ForeignKey('Neighborhood', on_delete=models.CASCADE)
 
     def __str__(self):
-        template = "{dm} {sz} {nh}"
-        return template.format(dm=self.demographic, sz=self.housing_size, nh=self.neighborhood)
+        template = "{pp} {et} {nh}"
+        return template.format(pp=self.population, et=self.ethnicity, nh=self.neighborhood)
 
     def __repr__(self):
-        template = "{dm} {sz} {nh}"
-        return template.format(dm=self.demographic, sz=self.housing_size, nh=self.neighborhood)
+        template = "{pp} {et} {nh}"
+        return template.format(pp=self.population, et=self.ethnicity, nh=self.neighborhood)
 
