@@ -32,18 +32,19 @@ class ReportYearSerializer(serializers.ModelSerializer):
 
 
 class AffordableSerializer(serializers.ModelSerializer):
-    demographic = DemographicSerializer()
-    housing_size = HousingSizeSerializer()
-    neighborhood = NeighborhoodSerializer()
+    demographic = serializers.CharField(source='demographic.name', read_only=True)
+    housing_size = serializers.CharField(source='housing_size.household_type', read_only=True)
+    neighborhood = serializers.CharField(source='neighborhood.name', read_only=True)
 
     class Meta:
         model = Affordable
         fields = ('affordable', 'demographic', 'housing_size', 'neighborhood')
 
+
 class RentSerializer(serializers.ModelSerializer):
-    housing_size = HousingSizeSerializer()
-    nh_id = NeighborhoodSerializer()
-    year = ReportYearSerializer()
+    year = serializers.CharField(source='year.year', read_only=True)
+    housing_size = serializers.CharField(source='housing_size.household_type', read_only=True)
+    nh_id = serializers.CharField(source='nh_id.name', read_only=True)
 
     class Meta:
         model = NeighborhoodRent
@@ -52,8 +53,8 @@ class RentSerializer(serializers.ModelSerializer):
 
 
 class ProdVsCostSerializer(serializers.ModelSerializer):
-    neighborhood = NeighborhoodSerializer()
-
+    neighborhood = serializers.CharField(source='neighborhood.name', read_only=True)
+    year = serializers.CharField(source='year.year', read_only=True)
     class Meta:
         model = HousingProductionVsCost
         fields = (
