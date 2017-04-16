@@ -1,12 +1,19 @@
 #!/bin/bash
 
+# Start up command for the Docker image
+echo "##############################"
 echo  Running docker-entrypoint.sh...
 
 # Necessary to pull the config file here because .dockerignore ignores the config file if it's downloaded to the container image
 ./bin/getconfig.sh
 
-# Disabled the migrate step to bring the container startup time down to acceptable levels
-#python manage.py migrate --no-input
+# If running locally apply migrations
+if [ "$DEPLOY_TARGET" == "dev" ]; then
+    echo -e "#####################################################"
+    echo -e  RUNNING MIGRATIONS
+    python manage.py makemigrations --no-input
+    python manage.py migrate --no-input
+fi
 python manage.py collectstatic --no-input
 
 # Fire up a lightweight frontend to host the Django endpoints - gunicorn was the default choice
