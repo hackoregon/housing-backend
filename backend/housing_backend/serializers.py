@@ -42,7 +42,7 @@ class AffordableSerializer(serializers.ModelSerializer):
 
 
 class RentSerializer(serializers.ModelSerializer):
-    year = serializers.CharField(source='year.year', read_only=True)
+    year = serializers.IntegerField(source='year.year', read_only=True)
     housing_size = serializers.CharField(source='housing_size.household_type', read_only=True)
     nh_id = serializers.CharField(source='nh_id.name', read_only=True)
 
