@@ -13,7 +13,7 @@ class TestAffordabilityEndpoint(TestCase):
         self.client = Client()
 
     def test(self):
-        response = self.client.get('/housing_api/affordable/')
+        response = self.client.get('/housing/affordable/')
 
         self.assertEqual(response.status_code, 200)
 

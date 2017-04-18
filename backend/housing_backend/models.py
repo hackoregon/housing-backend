@@ -100,7 +100,6 @@ class HousingSupply(models.Model):
         template = "HousingSupply: {nh} {yr}"
         return template.format(nh=self.neighborhood, yr=self.report_year)
 
-
 class HousingPermits(models.Model):
     """ Models single year of one neighborhood's housing permits issued """
     neighborhood = models.ForeignKey('Neighborhood', on_delete=models.CASCADE, help_text='Neighborhood by census tract')

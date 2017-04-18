@@ -2,7 +2,7 @@
 
 The housing api can currently be accessed at
 
-<domain_name.com>/housing_api/
+<domain_name.com>/housing/
 
 At this point only GET requests work, but eventually we'd like to be able to accept PUT requests from authorized users to add additional data.
 
@@ -44,7 +44,7 @@ Lists all affordabilities in the database
 Filters start with ? and are strung together with & symbols
 
 ```
-http://127.0.0.1:8000/housing_api/affordable/?demographic=Avg. Portland Household&housing_size=3-BR
+http://127.0.0.1:8000/housing/affordable/?demographic=Avg. Portland Household&housing_size=3-BR
 ```
 
 The above would return a json object containing all of the "Affordable" objects that matched the Average porlander
