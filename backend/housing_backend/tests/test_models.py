@@ -3,7 +3,7 @@
 import pytest
 from mixer.backend.django import mixer
 from housing_backend.models import Affordable, Demographic, HousingSize, Neighborhood, ReportYear,\
-                                   HousingSupply, HousingPermits
+                                   HousingSupply, HousingPermits, HousingProductionVsCost
 from django.db import models
 
 
@@ -230,3 +230,12 @@ class TestHousingPermits:
 
         assert HousingPermits.__repr__ is not models.Model.__repr__, "__repr__ method should have been overridden"
 
+class TestHousingProductionVsCost:
+    def test_model_creation(self):
+        """ Test creation and saving of HousingProductionVsCost model """
+
+        this_obj = mixer.blend('housing_backend.HousingProductionVsCost')
+        assert this_obj.pk == 1, 'Should create an instance with pk 1'
+        assert isinstance(this_obj, HousingProductionVsCost), 'Should create an instance of ProductionVsCost model'
+
+    #TODO Moar tests here
