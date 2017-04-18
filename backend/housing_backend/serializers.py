@@ -35,10 +35,11 @@ class AffordableSerializer(serializers.ModelSerializer):
     demographic = serializers.CharField(source='demographic.name', read_only=True)
     housing_size = serializers.CharField(source='housing_size.household_type', read_only=True)
     neighborhood = serializers.CharField(source='neighborhood.name', read_only=True)
+    year = serializers.IntegerField(source='year.year', read_only=True)
 
     class Meta:
         model = Affordable
-        fields = ('affordable', 'demographic', 'housing_size', 'neighborhood')
+        fields = ('affordable', 'demographic', 'housing_size', 'neighborhood', 'year')
 
 
 class RentSerializer(serializers.ModelSerializer):
