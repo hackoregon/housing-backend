@@ -1,12 +1,8 @@
-#!/bin/bash
+#! /bin/bash
 
 echo "#################################################################################################################"
-echo "Running test-entrypoint.sh... py.test"
+echo "Running scrub-proj.sh... remove all Docker containers and images"
 echo "#################################################################################################################"
 
-export PATH=$PATH:~/.local/bin
-#./bin/getconfig.sh
-#python manage.py migrate --noinput
-#python manage.py test --no-input
-
-py.test
+docker rm $(docker ps -a -q)
+docker rmi $(docker images -a -q)

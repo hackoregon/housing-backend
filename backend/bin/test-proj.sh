@@ -1,13 +1,16 @@
 #! /bin/bash
 #docker-compose -f backend/docker-compose.yml run housing-service py.test
 
+echo "#################################################################################################################"
+echo "Running test-proj.sh... run all configured unit tests inside Docker container"
+echo "#################################################################################################################"
+
 usage() { echo "Usage: $0 [-l] for a local test or [-t] for a travis test " 1>&2; exit 1; }
 
 if [ $# == 0 ]; then usage; fi
 
 echo  Running test_proj.sh...
 
-# Run all configured unit tests inside the Docker container
 while getopts ":lt" opt; do
     case "$opt" in
         l)

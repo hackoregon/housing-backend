@@ -10,7 +10,7 @@ services:
     - PROJ_SETTINGS_DIR=${PROJ_SETTINGS_DIR}
     - DEPLOY_TARGET=${DEPLOY_TARGET}
     - CONFIG_BUCKET=${CONFIG_BUCKET}
-    command: /code/start-dev-server.sh
+    command: /code/docker-entrypoint.sh
     volumes:
       - .:/code
     ports:

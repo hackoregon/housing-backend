@@ -1,6 +1,10 @@
 #! /bin/bash
 
-usage() { echo "Usage: $0 [-l] for a local build or [-t] for a travis build " 1>&2; exit 1; }
+echo "#################################################################################################################"
+echo "Running build-proj.sh... build Docker services"
+echo "#################################################################################################################"
+
+usage() { echo "Usage: $0 [-l] for a local build or [-t] for a Travis build " 1>&2; exit 1; }
 
 if [ $# == 0 ]; then usage; fi
 
