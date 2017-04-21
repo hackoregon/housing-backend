@@ -1,10 +1,10 @@
 Neighborhood,ReportYear,SingleFamilyUnits,MultiFamilyUnits,SingleFamilyPermits,MultiFamilyPermits
-122-Division,2010,4405,3719,44,0
-122-Division,2011,4441,3719,45,0
-122-Division,2012,4468,3719,26,9
-122-Division,2013,4494,3736,49,0
-122-Division,2014,4515,3768,43,0
-122-Division,2015,4543,3768,13,0
+122nd-Division,2010,4405,3719,44,0
+122nd-Division,2011,4441,3719,45,0
+122nd-Division,2012,4468,3719,26,9
+122nd-Division,2013,4494,3736,49,0
+122nd-Division,2014,4515,3768,43,0
+122nd-Division,2015,4543,3768,13,0
 Belmont-Hawthorne-Division,2010,7168,6365,14,24
 Belmont-Hawthorne-Division,2011,7180,6365,30,42
 Belmont-Hawthorne-Division,2012,7199,6396,27,249
@@ -65,12 +65,12 @@ Lents-Foster,2012,14237,4667,71,0
 Lents-Foster,2013,14304,4669,110,0
 Lents-Foster,2014,14407,4675,96,6
 Lents-Foster,2015,14494,4681,113,49
-"MLK, Alberta",2010,11752,2288,64,40
-"MLK, Alberta",2011,11797,2335,53,0
-"MLK, Alberta",2012,11853,2335,77,8
-"MLK, Alberta",2013,11929,2345,76,78
-"MLK, Alberta",2014,11987,2429,97,52
-"MLK, Alberta",2015,12086,2465,96,44
+MLK-Alberta,2010,11752,2288,64,40
+MLK-Alberta,2011,11797,2335,53,0
+MLK-Alberta,2012,11853,2335,77,8
+MLK-Alberta,2013,11929,2345,76,78
+MLK-Alberta,2014,11987,2429,97,52
+MLK-Alberta,2015,12086,2465,96,44
 Montavilla,2010,10505,4797,17,0
 Montavilla,2011,10523,4799,16,0
 Montavilla,2012,10538,4799,30,15
@@ -89,12 +89,12 @@ Parkrose-Argay,2012,2854,2697,0,0
 Parkrose-Argay,2013,2854,2697,0,0
 Parkrose-Argay,2014,2854,2700,2,0
 Parkrose-Argay,2015,2854,2700,1,0
-Pleasant Valley ,2010,4048,1324,6,0
-Pleasant Valley ,2011,4054,1324,16,0
-Pleasant Valley ,2012,4067,1324,12,0
-Pleasant Valley ,2013,4075,1326,21,0
-Pleasant Valley ,2014,4101,1326,20,0
-Pleasant Valley ,2015,4115,1326,23,0
+Pleasant Valley,2010,4048,1324,6,0
+Pleasant Valley,2011,4054,1324,16,0
+Pleasant Valley,2012,4067,1324,12,0
+Pleasant Valley,2013,4075,1326,21,0
+Pleasant Valley,2014,4101,1326,20,0
+Pleasant Valley,2015,4115,1326,23,0
 Raleigh Hills,2010,4663,1209,8,0
 Raleigh Hills,2011,4672,1209,7,0
 Raleigh Hills,2012,4675,1209,7,15
