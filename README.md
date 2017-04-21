@@ -102,9 +102,9 @@ $ git branch -a
 
 ### How to build
 
-#### 1. Create the environment file
+#### 1. Create the environment files
 
-* Create `env.sh` in the project with the following contents:
+* Create `backend/bin/env.sh` with the following contents:
 
 ```bash
 #! /bin/bash
@@ -122,6 +122,30 @@ echo DEPLOY_TARGET $DEPLOY_TARGET
 
 * Run `chmod +x backend/bin/env.sh` to make the script file executable
 
+* Create `backend/housing-backend/project_config.py` with the following contents:
+
+```python
+AWS = {
+    # Settings for dev:
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'NAME': 'postgres',
+    'HOST': 'db',
+    'PORT': '5432',
+    'USER': 'postgres',
+    'PASSWORD': '',
+    }
+
+DJANGO_SECRET_KEY = 'notthatsecret'
+
+# Note: the 192.168.99.100 enables testing with Docker Toolbox for Mac and Windows
+ALLOWED_HOSTS = ['127.0.0.1',
+                 'localhost',
+                 '192.168.99.100',
+                 'hacko-integration-658279555.us-west-2.elb.amazonaws.com',
+                 'service.civicpdx.org',
+                 'service.civicpdx.com']
+```
+
 #### 2. Setup your local environment
 
 * Run `source env.sh` to setup your environment
@@ -133,18 +157,8 @@ echo DEPLOY_TARGET $DEPLOY_TARGET
 
 #### 4. Start the container services: backend_housing_service_1 and backend_db_1
 
-* Make sure you've got a local copy of your project's `backend/backend/project_config.py` - contact the DevOps Team
-* Edit the AWS dictionary of `project_config.py` to:
-```
-'ENGINE': 'django.db.backends.postgresql_psycopg2',
-'NAME': 'postgres',
-'HOST': 'db',
-'PORT': '5432',
-'USER': 'postgres',
-'PASSWORD': '',
-```
 * Run `backend/bin/start-proj.sh -l` then view the API from a web browser (localhost:8000/housing/)
-* Explore the [API documentation](https://github.com/hackoregon/housing-backend/tree/backend/docs/API.md).
+* The Swagger interface to the API is largely self-documenting otherwise explore the legacy [API documentation](https://github.com/hackoregon/housing-backend/tree/backend/docs/API.md).
 
 #### 5. Clean up
 
