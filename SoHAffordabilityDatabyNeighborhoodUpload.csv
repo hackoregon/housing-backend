@@ -1,4 +1,3 @@
-Table 1,,,,
 Neighborhood,Demographic,Unit_Size,Affordable_ind,Year
 Centennial-Glenfair-Wilkes,Avg. Portland Household,Studio,Y,2016
 Centennial-Glenfair-Wilkes,Avg. Portland Household,1-BR,Y,2016
@@ -65,71 +64,71 @@ Centennial-Glenfair-Wilkes,Foreign-Born,1-BR,Y,2016
 Centennial-Glenfair-Wilkes,Foreign-Born,2-BR,Y,2016
 Centennial-Glenfair-Wilkes,Foreign-Born,3-BR,N,2016
 Centennial-Glenfair-Wilkes,Foreign-Born,Homeownership,Y,2016
-122-Division,Avg. Portland Household,Studio,Y,2016
-122-Division,Avg. Portland Household,1-BR,Y,2016
-122-Division,Avg. Portland Household,2-BR,Y,2016
-122-Division,Avg. Portland Household,3-BR,Y,2016
-122-Division,Avg. Portland Household,Homeownership,Y,2016
-122-Division,3-Person Extremely Low-Income,Studio,N,2016
-122-Division,3-Person Extremely Low-Income,1-BR,N,2016
-122-Division,3-Person Extremely Low-Income,2-BR,N,2016
-122-Division,3-Person Extremely Low-Income,3-BR,N,2016
-122-Division,3-Person Extremely Low-Income,Homeownership,N,2016
-122-Division,3-Person Low-Income,Studio,Y,2016
-122-Division,3-Person Low-Income,1-BR,Y,2016
-122-Division,3-Person Low-Income,2-BR,Y,2016
-122-Division,3-Person Low-Income,3-BR,N,2016
-122-Division,3-Person Low-Income,Homeownership,Y,2016
-122-Division,3-Person Moderate-Income,Studio,Y,2016
-122-Division,3-Person Moderate-Income,1-BR,Y,2016
-122-Division,3-Person Moderate-Income,2-BR,Y,2016
-122-Division,3-Person Moderate-Income,3-BR,Y,2016
-122-Division,3-Person Moderate-Income,Homeownership,Y,2016
-122-Division,Couple with Family,Studio,Y,2016
-122-Division,Couple with Family,1-BR,Y,2016
-122-Division,Couple with Family,2-BR,Y,2016
-122-Division,Couple with Family,3-BR,Y,2016
-122-Division,Couple with Family,Homeownership,Y,2016
-122-Division,White,Studio,Y,2016
-122-Division,White,1-BR,Y,2016
-122-Division,White,2-BR,Y,2016
-122-Division,White,3-BR,Y,2016
-122-Division,White,Homeownership,Y,2016
-122-Division,Black,Studio,Y,2016
-122-Division,Black,1-BR,N,2016
-122-Division,Black,2-BR,N,2016
-122-Division,Black,3-BR,N,2016
-122-Division,Black,Homeownership,N,2016
-122-Division,Latino,Studio,Y,2016
-122-Division,Latino,1-BR,Y,2016
-122-Division,Latino,2-BR,N,2016
-122-Division,Latino,3-BR,N,2016
-122-Division,Latino,Homeownership,N,2016
-122-Division,Native American,Studio,Y,2016
-122-Division,Native American,1-BR,N,2016
-122-Division,Native American,2-BR,N,2016
-122-Division,Native American,3-BR,N,2016
-122-Division,Native American,Homeownership,N,2016
-122-Division,Asian,Studio,Y,2016
-122-Division,Asian,1-BR,Y,2016
-122-Division,Asian,2-BR,Y,2016
-122-Division,Asian,3-BR,Y,2016
-122-Division,Asian,Homeownership,Y,2016
-122-Division,Senior,Studio,Y,2016
-122-Division,Senior,1-BR,Y,2016
-122-Division,Senior,2-BR,N,2016
-122-Division,Senior,3-BR,N,2016
-122-Division,Senior,Homeownership,N,2016
-122-Division,Single Mother,Studio,Y,2016
-122-Division,Single Mother,1-BR,N,2016
-122-Division,Single Mother,2-BR,N,2016
-122-Division,Single Mother,3-BR,N,2016
-122-Division,Single Mother,Homeownership,N,2016
-122-Division,Foreign-Born,Studio,Y,2016
-122-Division,Foreign-Born,1-BR,Y,2016
-122-Division,Foreign-Born,2-BR,Y,2016
-122-Division,Foreign-Born,3-BR,N,2016
-122-Division,Foreign-Born,Homeownership,Y,2016
+122nd-Division,Avg. Portland Household,Studio,Y,2016
+122nd-Division,Avg. Portland Household,1-BR,Y,2016
+122nd-Division,Avg. Portland Household,2-BR,Y,2016
+122nd-Division,Avg. Portland Household,3-BR,Y,2016
+122nd-Division,Avg. Portland Household,Homeownership,Y,2016
+122nd-Division,3-Person Extremely Low-Income,Studio,N,2016
+122nd-Division,3-Person Extremely Low-Income,1-BR,N,2016
+122nd-Division,3-Person Extremely Low-Income,2-BR,N,2016
+122nd-Division,3-Person Extremely Low-Income,3-BR,N,2016
+122nd-Division,3-Person Extremely Low-Income,Homeownership,N,2016
+122nd-Division,3-Person Low-Income,Studio,Y,2016
+122nd-Division,3-Person Low-Income,1-BR,Y,2016
+122nd-Division,3-Person Low-Income,2-BR,Y,2016
+122nd-Division,3-Person Low-Income,3-BR,N,2016
+122nd-Division,3-Person Low-Income,Homeownership,Y,2016
+122nd-Division,3-Person Moderate-Income,Studio,Y,2016
+122nd-Division,3-Person Moderate-Income,1-BR,Y,2016
+122nd-Division,3-Person Moderate-Income,2-BR,Y,2016
+122nd-Division,3-Person Moderate-Income,3-BR,Y,2016
+122nd-Division,3-Person Moderate-Income,Homeownership,Y,2016
+122nd-Division,Couple with Family,Studio,Y,2016
+122nd-Division,Couple with Family,1-BR,Y,2016
+122nd-Division,Couple with Family,2-BR,Y,2016
+122nd-Division,Couple with Family,3-BR,Y,2016
+122nd-Division,Couple with Family,Homeownership,Y,2016
+122nd-Division,White,Studio,Y,2016
+122nd-Division,White,1-BR,Y,2016
+122nd-Division,White,2-BR,Y,2016
+122nd-Division,White,3-BR,Y,2016
+122nd-Division,White,Homeownership,Y,2016
+122nd-Division,Black,Studio,Y,2016
+122nd-Division,Black,1-BR,N,2016
+122nd-Division,Black,2-BR,N,2016
+122nd-Division,Black,3-BR,N,2016
+122nd-Division,Black,Homeownership,N,2016
+122nd-Division,Latino,Studio,Y,2016
+122nd-Division,Latino,1-BR,Y,2016
+122nd-Division,Latino,2-BR,N,2016
+122nd-Division,Latino,3-BR,N,2016
+122nd-Division,Latino,Homeownership,N,2016
+122nd-Division,Native American,Studio,Y,2016
+122nd-Division,Native American,1-BR,N,2016
+122nd-Division,Native American,2-BR,N,2016
+122nd-Division,Native American,3-BR,N,2016
+122nd-Division,Native American,Homeownership,N,2016
+122nd-Division,Asian,Studio,Y,2016
+122nd-Division,Asian,1-BR,Y,2016
+122nd-Division,Asian,2-BR,Y,2016
+122nd-Division,Asian,3-BR,Y,2016
+122nd-Division,Asian,Homeownership,Y,2016
+122nd-Division,Senior,Studio,Y,2016
+122nd-Division,Senior,1-BR,Y,2016
+122nd-Division,Senior,2-BR,N,2016
+122nd-Division,Senior,3-BR,N,2016
+122nd-Division,Senior,Homeownership,N,2016
+122nd-Division,Single Mother,Studio,Y,2016
+122nd-Division,Single Mother,1-BR,N,2016
+122nd-Division,Single Mother,2-BR,N,2016
+122nd-Division,Single Mother,3-BR,N,2016
+122nd-Division,Single Mother,Homeownership,N,2016
+122nd-Division,Foreign-Born,Studio,Y,2016
+122nd-Division,Foreign-Born,1-BR,Y,2016
+122nd-Division,Foreign-Born,2-BR,Y,2016
+122nd-Division,Foreign-Born,3-BR,N,2016
+122nd-Division,Foreign-Born,Homeownership,Y,2016
 Belmont-Hawthorne-Division,Avg. Portland Household,Studio,Y,2016
 Belmont-Hawthorne-Division,Avg. Portland Household,1-BR,Y,2016
 Belmont-Hawthorne-Division,Avg. Portland Household,2-BR,N,2016
@@ -1235,71 +1234,71 @@ Sellwood-Moreland-Brooklyn,Foreign-Born,1-BR,N,2016
 Sellwood-Moreland-Brooklyn,Foreign-Born,2-BR,N,2016
 Sellwood-Moreland-Brooklyn,Foreign-Born,3-BR,0,2016
 Sellwood-Moreland-Brooklyn,Foreign-Born,Homeownership,N,2016
-South Portland-Marquam Hill,Avg. Portland Household,Studio,N,2016
-South Portland-Marquam Hill,Avg. Portland Household,1-BR,N,2016
-South Portland-Marquam Hill,Avg. Portland Household,2-BR,N,2016
-South Portland-Marquam Hill,Avg. Portland Household,3-BR,N,2016
-South Portland-Marquam Hill,Avg. Portland Household,Homeownership,N,2016
-South Portland-Marquam Hill,3-Person Extremely Low-Income,Studio,N,2016
-South Portland-Marquam Hill,3-Person Extremely Low-Income,1-BR,N,2016
-South Portland-Marquam Hill,3-Person Extremely Low-Income,2-BR,N,2016
-South Portland-Marquam Hill,3-Person Extremely Low-Income,3-BR,N,2016
-South Portland-Marquam Hill,3-Person Extremely Low-Income,Homeownership,N,2016
-South Portland-Marquam Hill,3-Person Low-Income,Studio,N,2016
-South Portland-Marquam Hill,3-Person Low-Income,1-BR,N,2016
-South Portland-Marquam Hill,3-Person Low-Income,2-BR,N,2016
-South Portland-Marquam Hill,3-Person Low-Income,3-BR,N,2016
-South Portland-Marquam Hill,3-Person Low-Income,Homeownership,N,2016
-South Portland-Marquam Hill,3-Person Moderate-Income,Studio,N,2016
-South Portland-Marquam Hill,3-Person Moderate-Income,1-BR,N,2016
-South Portland-Marquam Hill,3-Person Moderate-Income,2-BR,N,2016
-South Portland-Marquam Hill,3-Person Moderate-Income,3-BR,N,2016
-South Portland-Marquam Hill,3-Person Moderate-Income,Homeownership,N,2016
-South Portland-Marquam Hill,Couple with Family,Studio,Y,2016
-South Portland-Marquam Hill,Couple with Family,1-BR,Y,2016
-South Portland-Marquam Hill,Couple with Family,2-BR,N,2016
-South Portland-Marquam Hill,Couple with Family,3-BR,Y,2016
-South Portland-Marquam Hill,Couple with Family,Homeownership,Y,2016
-South Portland-Marquam Hill,White,Studio,Y,2016
-South Portland-Marquam Hill,White,1-BR,Y,2016
-South Portland-Marquam Hill,White,2-BR,N,2016
-South Portland-Marquam Hill,White,3-BR,N,2016
-South Portland-Marquam Hill,White,Homeownership,N,2016
-South Portland-Marquam Hill,Black,Studio,N,2016
-South Portland-Marquam Hill,Black,1-BR,N,2016
-South Portland-Marquam Hill,Black,2-BR,N,2016
-South Portland-Marquam Hill,Black,3-BR,N,2016
-South Portland-Marquam Hill,Black,Homeownership,N,2016
-South Portland-Marquam Hill,Latino,Studio,N,2016
-South Portland-Marquam Hill,Latino,1-BR,N,2016
-South Portland-Marquam Hill,Latino,2-BR,N,2016
-South Portland-Marquam Hill,Latino,3-BR,N,2016
-South Portland-Marquam Hill,Latino,Homeownership,N,2016
-South Portland-Marquam Hill,Native American,Studio,N,2016
-South Portland-Marquam Hill,Native American,1-BR,N,2016
-South Portland-Marquam Hill,Native American,2-BR,N,2016
-South Portland-Marquam Hill,Native American,3-BR,N,2016
-South Portland-Marquam Hill,Native American,Homeownership,N,2016
-South Portland-Marquam Hill,Asian,Studio,Y,2016
-South Portland-Marquam Hill,Asian,1-BR,N,2016
-South Portland-Marquam Hill,Asian,2-BR,N,2016
-South Portland-Marquam Hill,Asian,3-BR,N,2016
-South Portland-Marquam Hill,Asian,Homeownership,N,2016
-South Portland-Marquam Hill,Senior,Studio,N,2016
-South Portland-Marquam Hill,Senior,1-BR,N,2016
-South Portland-Marquam Hill,Senior,2-BR,N,2016
-South Portland-Marquam Hill,Senior,3-BR,N,2016
-South Portland-Marquam Hill,Senior,Homeownership,N,2016
-South Portland-Marquam Hill,Single Mother,Studio,N,2016
-South Portland-Marquam Hill,Single Mother,1-BR,N,2016
-South Portland-Marquam Hill,Single Mother,2-BR,N,2016
-South Portland-Marquam Hill,Single Mother,3-BR,N,2016
-South Portland-Marquam Hill,Single Mother,Homeownership,N,2016
-South Portland-Marquam Hill,Foreign-Born,Studio,N,2016
-South Portland-Marquam Hill,Foreign-Born,1-BR,N,2016
-South Portland-Marquam Hill,Foreign-Born,2-BR,N,2016
-South Portland-Marquam Hill,Foreign-Born,3-BR,N,2016
-South Portland-Marquam Hill,Foreign-Born,Homeownership,N,2016
+South Portland-Maraquam Hill,Avg. Portland Household,Studio,N,2016
+South Portland-Maraquam Hill,Avg. Portland Household,1-BR,N,2016
+South Portland-Maraquam Hill,Avg. Portland Household,2-BR,N,2016
+South Portland-Maraquam Hill,Avg. Portland Household,3-BR,N,2016
+South Portland-Maraquam Hill,Avg. Portland Household,Homeownership,N,2016
+South Portland-Maraquam Hill,3-Person Extremely Low-Income,Studio,N,2016
+South Portland-Maraquam Hill,3-Person Extremely Low-Income,1-BR,N,2016
+South Portland-Maraquam Hill,3-Person Extremely Low-Income,2-BR,N,2016
+South Portland-Maraquam Hill,3-Person Extremely Low-Income,3-BR,N,2016
+South Portland-Maraquam Hill,3-Person Extremely Low-Income,Homeownership,N,2016
+South Portland-Maraquam Hill,3-Person Low-Income,Studio,N,2016
+South Portland-Maraquam Hill,3-Person Low-Income,1-BR,N,2016
+South Portland-Maraquam Hill,3-Person Low-Income,2-BR,N,2016
+South Portland-Maraquam Hill,3-Person Low-Income,3-BR,N,2016
+South Portland-Maraquam Hill,3-Person Low-Income,Homeownership,N,2016
+South Portland-Maraquam Hill,3-Person Moderate-Income,Studio,N,2016
+South Portland-Maraquam Hill,3-Person Moderate-Income,1-BR,N,2016
+South Portland-Maraquam Hill,3-Person Moderate-Income,2-BR,N,2016
+South Portland-Maraquam Hill,3-Person Moderate-Income,3-BR,N,2016
+South Portland-Maraquam Hill,3-Person Moderate-Income,Homeownership,N,2016
+South Portland-Maraquam Hill,Couple with Family,Studio,Y,2016
+South Portland-Maraquam Hill,Couple with Family,1-BR,Y,2016
+South Portland-Maraquam Hill,Couple with Family,2-BR,N,2016
+South Portland-Maraquam Hill,Couple with Family,3-BR,Y,2016
+South Portland-Maraquam Hill,Couple with Family,Homeownership,Y,2016
+South Portland-Maraquam Hill,White,Studio,Y,2016
+South Portland-Maraquam Hill,White,1-BR,Y,2016
+South Portland-Maraquam Hill,White,2-BR,N,2016
+South Portland-Maraquam Hill,White,3-BR,N,2016
+South Portland-Maraquam Hill,White,Homeownership,N,2016
+South Portland-Maraquam Hill,Black,Studio,N,2016
+South Portland-Maraquam Hill,Black,1-BR,N,2016
+South Portland-Maraquam Hill,Black,2-BR,N,2016
+South Portland-Maraquam Hill,Black,3-BR,N,2016
+South Portland-Maraquam Hill,Black,Homeownership,N,2016
+South Portland-Maraquam Hill,Latino,Studio,N,2016
+South Portland-Maraquam Hill,Latino,1-BR,N,2016
+South Portland-Maraquam Hill,Latino,2-BR,N,2016
+South Portland-Maraquam Hill,Latino,3-BR,N,2016
+South Portland-Maraquam Hill,Latino,Homeownership,N,2016
+South Portland-Maraquam Hill,Native American,Studio,N,2016
+South Portland-Maraquam Hill,Native American,1-BR,N,2016
+South Portland-Maraquam Hill,Native American,2-BR,N,2016
+South Portland-Maraquam Hill,Native American,3-BR,N,2016
+South Portland-Maraquam Hill,Native American,Homeownership,N,2016
+South Portland-Maraquam Hill,Asian,Studio,Y,2016
+South Portland-Maraquam Hill,Asian,1-BR,N,2016
+South Portland-Maraquam Hill,Asian,2-BR,N,2016
+South Portland-Maraquam Hill,Asian,3-BR,N,2016
+South Portland-Maraquam Hill,Asian,Homeownership,N,2016
+South Portland-Maraquam Hill,Senior,Studio,N,2016
+South Portland-Maraquam Hill,Senior,1-BR,N,2016
+South Portland-Maraquam Hill,Senior,2-BR,N,2016
+South Portland-Maraquam Hill,Senior,3-BR,N,2016
+South Portland-Maraquam Hill,Senior,Homeownership,N,2016
+South Portland-Maraquam Hill,Single Mother,Studio,N,2016
+South Portland-Maraquam Hill,Single Mother,1-BR,N,2016
+South Portland-Maraquam Hill,Single Mother,2-BR,N,2016
+South Portland-Maraquam Hill,Single Mother,3-BR,N,2016
+South Portland-Maraquam Hill,Single Mother,Homeownership,N,2016
+South Portland-Maraquam Hill,Foreign-Born,Studio,N,2016
+South Portland-Maraquam Hill,Foreign-Born,1-BR,N,2016
+South Portland-Maraquam Hill,Foreign-Born,2-BR,N,2016
+South Portland-Maraquam Hill,Foreign-Born,3-BR,N,2016
+South Portland-Maraquam Hill,Foreign-Born,Homeownership,N,2016
 St. Johns,Avg. Portland Household,Studio,Y,2016
 St. Johns,Avg. Portland Household,1-BR,Y,2016
 St. Johns,Avg. Portland Household,2-BR,Y,2016
@@ -1776,42 +1775,42 @@ Gateway,Avg. Portland Household,Studio,N,2015
 Gateway,Avg. Portland Household,1-BR,N,2015
 Gateway,Avg. Portland Household,2-BR,N,2015
 Gateway,Avg. Portland Household,3-BR,N,2015
-Hayden Island-Bridgeton,Native American,Studio,N,2015
-Hayden Island-Bridgeton,Native American,1-BR,Y,2015
-Hayden Island-Bridgeton,Native American,2-BR,Y,2015
-Hayden Island-Bridgeton,Native American,3-BR,N,2015
-Hayden Island-Bridgeton,Foreign-Born,Studio,N,2015
-Hayden Island-Bridgeton,Foreign-Born,1-BR,Y,2015
-Hayden Island-Bridgeton,Foreign-Born,2-BR,Y,2015
-Hayden Island-Bridgeton,Foreign-Born,3-BR,N,2015
-Hayden Island-Bridgeton,White,Studio,N,2015
-Hayden Island-Bridgeton,White,1-BR,N,2015
-Hayden Island-Bridgeton,White,2-BR,N,2015
-Hayden Island-Bridgeton,White,3-BR,N,2015
-Hayden Island-Bridgeton,Latino,Studio,N,2015
-Hayden Island-Bridgeton,Latino,1-BR,Y,2015
-Hayden Island-Bridgeton,Latino,2-BR,Y,2015
-Hayden Island-Bridgeton,Latino,3-BR,N,2015
-Hayden Island-Bridgeton,Black,Studio,N,2015
-Hayden Island-Bridgeton,Black,1-BR,Y,2015
-Hayden Island-Bridgeton,Black,2-BR,Y,2015
-Hayden Island-Bridgeton,Black,3-BR,N,2015
-Hayden Island-Bridgeton,Single Mother,Studio,N,2015
-Hayden Island-Bridgeton,Single Mother,1-BR,Y,2015
-Hayden Island-Bridgeton,Single Mother,2-BR,Y,2015
-Hayden Island-Bridgeton,Single Mother,3-BR,N,2015
-Hayden Island-Bridgeton,Senior,Studio,N,2015
-Hayden Island-Bridgeton,Senior,1-BR,Y,2015
-Hayden Island-Bridgeton,Senior,2-BR,Y,2015
-Hayden Island-Bridgeton,Senior,3-BR,N,2015
-Hayden Island-Bridgeton,Asian,Studio,N,2015
-Hayden Island-Bridgeton,Asian,1-BR,N,2015
-Hayden Island-Bridgeton,Asian,2-BR,Y,2015
-Hayden Island-Bridgeton,Asian,3-BR,N,2015
-Hayden Island-Bridgeton,Avg. Portland Household,Studio,N,2015
-Hayden Island-Bridgeton,Avg. Portland Household,1-BR,N,2015
-Hayden Island-Bridgeton,Avg. Portland Household,2-BR,N,2015
-Hayden Island-Bridgeton,Avg. Portland Household,3-BR,N,2015
+Hayden Island,Native American,Studio,N,2015
+Hayden Island,Native American,1-BR,Y,2015
+Hayden Island,Native American,2-BR,Y,2015
+Hayden Island,Native American,3-BR,N,2015
+Hayden Island,Foreign-Born,Studio,N,2015
+Hayden Island,Foreign-Born,1-BR,Y,2015
+Hayden Island,Foreign-Born,2-BR,Y,2015
+Hayden Island,Foreign-Born,3-BR,N,2015
+Hayden Island,White,Studio,N,2015
+Hayden Island,White,1-BR,N,2015
+Hayden Island,White,2-BR,N,2015
+Hayden Island,White,3-BR,N,2015
+Hayden Island,Latino,Studio,N,2015
+Hayden Island,Latino,1-BR,Y,2015
+Hayden Island,Latino,2-BR,Y,2015
+Hayden Island,Latino,3-BR,N,2015
+Hayden Island,Black,Studio,N,2015
+Hayden Island,Black,1-BR,Y,2015
+Hayden Island,Black,2-BR,Y,2015
+Hayden Island,Black,3-BR,N,2015
+Hayden Island,Single Mother,Studio,N,2015
+Hayden Island,Single Mother,1-BR,Y,2015
+Hayden Island,Single Mother,2-BR,Y,2015
+Hayden Island,Single Mother,3-BR,N,2015
+Hayden Island,Senior,Studio,N,2015
+Hayden Island,Senior,1-BR,Y,2015
+Hayden Island,Senior,2-BR,Y,2015
+Hayden Island,Senior,3-BR,N,2015
+Hayden Island,Asian,Studio,N,2015
+Hayden Island,Asian,1-BR,N,2015
+Hayden Island,Asian,2-BR,Y,2015
+Hayden Island,Asian,3-BR,N,2015
+Hayden Island,Avg. Portland Household,Studio,N,2015
+Hayden Island,Avg. Portland Household,1-BR,N,2015
+Hayden Island,Avg. Portland Household,2-BR,N,2015
+Hayden Island,Avg. Portland Household,3-BR,N,2015
 Hillsdale-Multnomah-Barbur,Native American,Studio,Y,2015
 Hillsdale-Multnomah-Barbur,Native American,1-BR,Y,2015
 Hillsdale-Multnomah-Barbur,Native American,2-BR,Y,2015
@@ -2244,42 +2243,42 @@ Sellwood-Moreland-Brooklyn,Avg. Portland Household,Studio,N,2015
 Sellwood-Moreland-Brooklyn,Avg. Portland Household,1-BR,N,2015
 Sellwood-Moreland-Brooklyn,Avg. Portland Household,2-BR,N,2015
 Sellwood-Moreland-Brooklyn,Avg. Portland Household,3-BR,N,2015
-South Portland-Marquam Hill,Native American,Studio,Y,2015
-South Portland-Marquam Hill,Native American,1-BR,Y,2015
-South Portland-Marquam Hill,Native American,2-BR,Y,2015
-South Portland-Marquam Hill,Native American,3-BR,Y,2015
-South Portland-Marquam Hill,Foreign-Born,Studio,Y,2015
-South Portland-Marquam Hill,Foreign-Born,1-BR,Y,2015
-South Portland-Marquam Hill,Foreign-Born,2-BR,Y,2015
-South Portland-Marquam Hill,Foreign-Born,3-BR,Y,2015
-South Portland-Marquam Hill,White,Studio,N,2015
-South Portland-Marquam Hill,White,1-BR,N,2015
-South Portland-Marquam Hill,White,2-BR,Y,2015
-South Portland-Marquam Hill,White,3-BR,N,2015
-South Portland-Marquam Hill,Latino,Studio,Y,2015
-South Portland-Marquam Hill,Latino,1-BR,Y,2015
-South Portland-Marquam Hill,Latino,2-BR,Y,2015
-South Portland-Marquam Hill,Latino,3-BR,Y,2015
-South Portland-Marquam Hill,Black,Studio,Y,2015
-South Portland-Marquam Hill,Black,1-BR,Y,2015
-South Portland-Marquam Hill,Black,2-BR,Y,2015
-South Portland-Marquam Hill,Black,3-BR,Y,2015
-South Portland-Marquam Hill,Single Mother,Studio,Y,2015
-South Portland-Marquam Hill,Single Mother,1-BR,Y,2015
-South Portland-Marquam Hill,Single Mother,2-BR,Y,2015
-South Portland-Marquam Hill,Single Mother,3-BR,Y,2015
-South Portland-Marquam Hill,Senior,Studio,Y,2015
-South Portland-Marquam Hill,Senior,1-BR,Y,2015
-South Portland-Marquam Hill,Senior,2-BR,Y,2015
-South Portland-Marquam Hill,Senior,3-BR,Y,2015
-South Portland-Marquam Hill,Asian,Studio,N,2015
-South Portland-Marquam Hill,Asian,1-BR,N,2015
-South Portland-Marquam Hill,Asian,2-BR,Y,2015
-South Portland-Marquam Hill,Asian,3-BR,N,2015
-South Portland-Marquam Hill,Avg. Portland Household,Studio,N,2015
-South Portland-Marquam Hill,Avg. Portland Household,1-BR,N,2015
-South Portland-Marquam Hill,Avg. Portland Household,2-BR,N,2015
-South Portland-Marquam Hill,Avg. Portland Household,3-BR,N,2015
+South Portland-Maraquam Hill,Native American,Studio,Y,2015
+South Portland-Maraquam Hill,Native American,1-BR,Y,2015
+South Portland-Maraquam Hill,Native American,2-BR,Y,2015
+South Portland-Maraquam Hill,Native American,3-BR,Y,2015
+South Portland-Maraquam Hill,Foreign-Born,Studio,Y,2015
+South Portland-Maraquam Hill,Foreign-Born,1-BR,Y,2015
+South Portland-Maraquam Hill,Foreign-Born,2-BR,Y,2015
+South Portland-Maraquam Hill,Foreign-Born,3-BR,Y,2015
+South Portland-Maraquam Hill,White,Studio,N,2015
+South Portland-Maraquam Hill,White,1-BR,N,2015
+South Portland-Maraquam Hill,White,2-BR,Y,2015
+South Portland-Maraquam Hill,White,3-BR,N,2015
+South Portland-Maraquam Hill,Latino,Studio,Y,2015
+South Portland-Maraquam Hill,Latino,1-BR,Y,2015
+South Portland-Maraquam Hill,Latino,2-BR,Y,2015
+South Portland-Maraquam Hill,Latino,3-BR,Y,2015
+South Portland-Maraquam Hill,Black,Studio,Y,2015
+South Portland-Maraquam Hill,Black,1-BR,Y,2015
+South Portland-Maraquam Hill,Black,2-BR,Y,2015
+South Portland-Maraquam Hill,Black,3-BR,Y,2015
+South Portland-Maraquam Hill,Single Mother,Studio,Y,2015
+South Portland-Maraquam Hill,Single Mother,1-BR,Y,2015
+South Portland-Maraquam Hill,Single Mother,2-BR,Y,2015
+South Portland-Maraquam Hill,Single Mother,3-BR,Y,2015
+South Portland-Maraquam Hill,Senior,Studio,Y,2015
+South Portland-Maraquam Hill,Senior,1-BR,Y,2015
+South Portland-Maraquam Hill,Senior,2-BR,Y,2015
+South Portland-Maraquam Hill,Senior,3-BR,Y,2015
+South Portland-Maraquam Hill,Asian,Studio,N,2015
+South Portland-Maraquam Hill,Asian,1-BR,N,2015
+South Portland-Maraquam Hill,Asian,2-BR,Y,2015
+South Portland-Maraquam Hill,Asian,3-BR,N,2015
+South Portland-Maraquam Hill,Avg. Portland Household,Studio,N,2015
+South Portland-Maraquam Hill,Avg. Portland Household,1-BR,N,2015
+South Portland-Maraquam Hill,Avg. Portland Household,2-BR,N,2015
+South Portland-Maraquam Hill,Avg. Portland Household,3-BR,N,2015
 St. Johns,Native American,Studio,Y,2015
 St. Johns,Native American,1-BR,Y,2015
 St. Johns,Native American,2-BR,Y,2015
@@ -2316,42 +2315,42 @@ St. Johns,Avg. Portland Household,Studio,N,2015
 St. Johns,Avg. Portland Household,1-BR,N,2015
 St. Johns,Avg. Portland Household,2-BR,N,2015
 St. Johns,Avg. Portland Household,3-BR,N,2015
-Tryon Creek-Riverdale,Native American,Studio,Y,2015
-Tryon Creek-Riverdale,Native American,1-BR,Y,2015
-Tryon Creek-Riverdale,Native American,2-BR,Y,2015
-Tryon Creek-Riverdale,Native American,3-BR,N,2015
-Tryon Creek-Riverdale,Foreign-Born,Studio,N,2015
-Tryon Creek-Riverdale,Foreign-Born,1-BR,N,2015
-Tryon Creek-Riverdale,Foreign-Born,2-BR,N,2015
-Tryon Creek-Riverdale,Foreign-Born,3-BR,N,2015
-Tryon Creek-Riverdale,White,Studio,N,2015
-Tryon Creek-Riverdale,White,1-BR,N,2015
-Tryon Creek-Riverdale,White,2-BR,N,2015
-Tryon Creek-Riverdale,White,3-BR,N,2015
-Tryon Creek-Riverdale,Latino,Studio,N,2015
-Tryon Creek-Riverdale,Latino,1-BR,N,2015
-Tryon Creek-Riverdale,Latino,2-BR,Y,2015
-Tryon Creek-Riverdale,Latino,3-BR,N,2015
-Tryon Creek-Riverdale,Black,Studio,N,2015
-Tryon Creek-Riverdale,Black,1-BR,Y,2015
-Tryon Creek-Riverdale,Black,2-BR,Y,2015
-Tryon Creek-Riverdale,Black,3-BR,N,2015
-Tryon Creek-Riverdale,Single Mother,Studio,N,2015
-Tryon Creek-Riverdale,Single Mother,1-BR,N,2015
-Tryon Creek-Riverdale,Single Mother,2-BR,Y,2015
-Tryon Creek-Riverdale,Single Mother,3-BR,N,2015
-Tryon Creek-Riverdale,Senior,Studio,N,2015
-Tryon Creek-Riverdale,Senior,1-BR,N,2015
-Tryon Creek-Riverdale,Senior,2-BR,N,2015
-Tryon Creek-Riverdale,Senior,3-BR,N,2015
-Tryon Creek-Riverdale,Asian,Studio,N,2015
-Tryon Creek-Riverdale,Asian,1-BR,N,2015
-Tryon Creek-Riverdale,Asian,2-BR,N,2015
-Tryon Creek-Riverdale,Asian,3-BR,N,2015
-Tryon Creek-Riverdale,Avg. Portland Household,Studio,N,2015
-Tryon Creek-Riverdale,Avg. Portland Household,1-BR,N,2015
-Tryon Creek-Riverdale,Avg. Portland Household,2-BR,N,2015
-Tryon Creek-Riverdale,Avg. Portland Household,3-BR,N,2015
+Tryon Creek-South Terwilliger,Native American,Studio,Y,2015
+Tryon Creek-South Terwilliger,Native American,1-BR,Y,2015
+Tryon Creek-South Terwilliger,Native American,2-BR,Y,2015
+Tryon Creek-South Terwilliger,Native American,3-BR,N,2015
+Tryon Creek-South Terwilliger,Foreign-Born,Studio,N,2015
+Tryon Creek-South Terwilliger,Foreign-Born,1-BR,N,2015
+Tryon Creek-South Terwilliger,Foreign-Born,2-BR,N,2015
+Tryon Creek-South Terwilliger,Foreign-Born,3-BR,N,2015
+Tryon Creek-South Terwilliger,White,Studio,N,2015
+Tryon Creek-South Terwilliger,White,1-BR,N,2015
+Tryon Creek-South Terwilliger,White,2-BR,N,2015
+Tryon Creek-South Terwilliger,White,3-BR,N,2015
+Tryon Creek-South Terwilliger,Latino,Studio,N,2015
+Tryon Creek-South Terwilliger,Latino,1-BR,N,2015
+Tryon Creek-South Terwilliger,Latino,2-BR,Y,2015
+Tryon Creek-South Terwilliger,Latino,3-BR,N,2015
+Tryon Creek-South Terwilliger,Black,Studio,N,2015
+Tryon Creek-South Terwilliger,Black,1-BR,Y,2015
+Tryon Creek-South Terwilliger,Black,2-BR,Y,2015
+Tryon Creek-South Terwilliger,Black,3-BR,N,2015
+Tryon Creek-South Terwilliger,Single Mother,Studio,N,2015
+Tryon Creek-South Terwilliger,Single Mother,1-BR,N,2015
+Tryon Creek-South Terwilliger,Single Mother,2-BR,Y,2015
+Tryon Creek-South Terwilliger,Single Mother,3-BR,N,2015
+Tryon Creek-South Terwilliger,Senior,Studio,N,2015
+Tryon Creek-South Terwilliger,Senior,1-BR,N,2015
+Tryon Creek-South Terwilliger,Senior,2-BR,N,2015
+Tryon Creek-South Terwilliger,Senior,3-BR,N,2015
+Tryon Creek-South Terwilliger,Asian,Studio,N,2015
+Tryon Creek-South Terwilliger,Asian,1-BR,N,2015
+Tryon Creek-South Terwilliger,Asian,2-BR,N,2015
+Tryon Creek-South Terwilliger,Asian,3-BR,N,2015
+Tryon Creek-South Terwilliger,Avg. Portland Household,Studio,N,2015
+Tryon Creek-South Terwilliger,Avg. Portland Household,1-BR,N,2015
+Tryon Creek-South Terwilliger,Avg. Portland Household,2-BR,N,2015
+Tryon Creek-South Terwilliger,Avg. Portland Household,3-BR,N,2015
 West Portland,Native American,Studio,Y,2015
 West Portland,Native American,1-BR,Y,2015
 West Portland,Native American,2-BR,Y,2015
@@ -2424,42 +2423,6 @@ Woodstock,Avg. Portland Household,Studio,N,2015
 Woodstock,Avg. Portland Household,1-BR,N,2015
 Woodstock,Avg. Portland Household,2-BR,N,2015
 Woodstock,Avg. Portland Household,3-BR,N,2015
-Downtown Waterfront,Native American,Studio,Y,2015
-Downtown Waterfront,Native American,1-BR,Y,2015
-Downtown Waterfront,Native American,2-BR,Y,2015
-Downtown Waterfront,Native American,3-BR,N,2015
-Downtown Waterfront,Foreign-Born,Studio,Y,2015
-Downtown Waterfront,Foreign-Born,1-BR,Y,2015
-Downtown Waterfront,Foreign-Born,2-BR,Y,2015
-Downtown Waterfront,Foreign-Born,3-BR,N,2015
-Downtown Waterfront,White,Studio,Y,2015
-Downtown Waterfront,White,1-BR,Y,2015
-Downtown Waterfront,White,2-BR,Y,2015
-Downtown Waterfront,White,3-BR,N,2015
-Downtown Waterfront,Latino,Studio,Y,2015
-Downtown Waterfront,Latino,1-BR,Y,2015
-Downtown Waterfront,Latino,2-BR,Y,2015
-Downtown Waterfront,Latino,3-BR,N,2015
-Downtown Waterfront,Black,Studio,Y,2015
-Downtown Waterfront,Black,1-BR,Y,2015
-Downtown Waterfront,Black,2-BR,Y,2015
-Downtown Waterfront,Black,3-BR,N,2015
-Downtown Waterfront,Single Mother,Studio,Y,2015
-Downtown Waterfront,Single Mother,1-BR,Y,2015
-Downtown Waterfront,Single Mother,2-BR,Y,2015
-Downtown Waterfront,Single Mother,3-BR,N,2015
-Downtown Waterfront,Senior,Studio,Y,2015
-Downtown Waterfront,Senior,1-BR,Y,2015
-Downtown Waterfront,Senior,2-BR,Y,2015
-Downtown Waterfront,Senior,3-BR,N,2015
-Downtown Waterfront,Asian,Studio,Y,2015
-Downtown Waterfront,Asian,1-BR,Y,2015
-Downtown Waterfront,Asian,2-BR,Y,2015
-Downtown Waterfront,Asian,3-BR,N,2015
-Downtown Waterfront,Avg. Portland Household,Studio,N,2015
-Downtown Waterfront,Avg. Portland Household,1-BR,N,2015
-Downtown Waterfront,Avg. Portland Household,2-BR,N,2015
-Downtown Waterfront,Avg. Portland Household,3-BR,N,2015
 Gateway,Native American,Studio,Y,2015
 Gateway,Native American,1-BR,Y,2015
 Gateway,Native American,2-BR,Y,2015
@@ -2496,219 +2459,75 @@ Gateway,Avg. Portland Household,Studio,N,2015
 Gateway,Avg. Portland Household,1-BR,N,2015
 Gateway,Avg. Portland Household,2-BR,N,2015
 Gateway,Avg. Portland Household,3-BR,N,2015
-Interstate,Native American,Studio,Y,2015
-Interstate,Native American,1-BR,Y,2015
-Interstate,Native American,2-BR,Y,2015
-Interstate,Native American,3-BR,Y,2015
-Interstate,Foreign-Born,Studio,N,2015
-Interstate,Foreign-Born,1-BR,Y,2015
-Interstate,Foreign-Born,2-BR,Y,2015
-Interstate,Foreign-Born,3-BR,N,2015
-Interstate,White,Studio,N,2015
-Interstate,White,1-BR,N,2015
-Interstate,White,2-BR,N,2015
-Interstate,White,3-BR,N,2015
-Interstate,Latino,Studio,Y,2015
-Interstate,Latino,1-BR,Y,2015
-Interstate,Latino,2-BR,Y,2015
-Interstate,Latino,3-BR,Y,2015
-Interstate,Black,Studio,Y,2015
-Interstate,Black,1-BR,Y,2015
-Interstate,Black,2-BR,Y,2015
-Interstate,Black,3-BR,Y,2015
-Interstate,Single Mother,Studio,Y,2015
-Interstate,Single Mother,1-BR,Y,2015
-Interstate,Single Mother,2-BR,Y,2015
-Interstate,Single Mother,3-BR,Y,2015
-Interstate,Senior,Studio,Y,2015
-Interstate,Senior,1-BR,Y,2015
-Interstate,Senior,2-BR,Y,2015
-Interstate,Senior,3-BR,Y,2015
-Interstate,Asian,Studio,N,2015
-Interstate,Asian,1-BR,N,2015
-Interstate,Asian,2-BR,N,2015
-Interstate,Asian,3-BR,N,2015
-Interstate,Avg. Portland Household,Studio,N,2015
-Interstate,Avg. Portland Household,1-BR,N,2015
-Interstate,Avg. Portland Household,2-BR,N,2015
-Interstate,Avg. Portland Household,3-BR,N,2015
-Lents,Native American,Studio,Y,2015
-Lents,Native American,1-BR,Y,2015
-Lents,Native American,2-BR,Y,2015
-Lents,Native American,3-BR,Y,2015
-Lents,Foreign-Born,Studio,N,2015
-Lents,Foreign-Born,1-BR,N,2015
-Lents,Foreign-Born,2-BR,N,2015
-Lents,Foreign-Born,3-BR,N,2015
-Lents,White,Studio,N,2015
-Lents,White,1-BR,N,2015
-Lents,White,2-BR,N,2015
-Lents,White,3-BR,N,2015
-Lents,Latino,Studio,N,2015
-Lents,Latino,1-BR,N,2015
-Lents,Latino,2-BR,N,2015
-Lents,Latino,3-BR,Y,2015
-Lents,Black,Studio,N,2015
-Lents,Black,1-BR,N,2015
-Lents,Black,2-BR,Y,2015
-Lents,Black,3-BR,Y,2015
-Lents,Single Mother,Studio,N,2015
-Lents,Single Mother,1-BR,N,2015
-Lents,Single Mother,2-BR,N,2015
-Lents,Single Mother,3-BR,Y,2015
-Lents,Senior,Studio,N,2015
-Lents,Senior,1-BR,N,2015
-Lents,Senior,2-BR,N,2015
-Lents,Senior,3-BR,Y,2015
-Lents,Asian,Studio,N,2015
-Lents,Asian,1-BR,N,2015
-Lents,Asian,2-BR,N,2015
-Lents,Asian,3-BR,N,2015
-Lents,Avg. Portland Household,Studio,N,2015
-Lents,Avg. Portland Household,1-BR,N,2015
-Lents,Avg. Portland Household,2-BR,N,2015
-Lents,Avg. Portland Household,3-BR,N,2015
-North Macadam,Native American,Studio,Y,2015
-North Macadam,Native American,1-BR,Y,2015
-North Macadam,Native American,2-BR,Y,2015
-North Macadam,Native American,3-BR,Y,2015
-North Macadam,Foreign-Born,Studio,Y,2015
-North Macadam,Foreign-Born,1-BR,Y,2015
-North Macadam,Foreign-Born,2-BR,Y,2015
-North Macadam,Foreign-Born,3-BR,Y,2015
-North Macadam,White,Studio,N,2015
-North Macadam,White,1-BR,Y,2015
-North Macadam,White,2-BR,Y,2015
-North Macadam,White,3-BR,N,2015
-North Macadam,Latino,Studio,Y,2015
-North Macadam,Latino,1-BR,Y,2015
-North Macadam,Latino,2-BR,Y,2015
-North Macadam,Latino,3-BR,Y,2015
-North Macadam,Black,Studio,Y,2015
-North Macadam,Black,1-BR,Y,2015
-North Macadam,Black,2-BR,Y,2015
-North Macadam,Black,3-BR,Y,2015
-North Macadam,Single Mother,Studio,Y,2015
-North Macadam,Single Mother,1-BR,Y,2015
-North Macadam,Single Mother,2-BR,Y,2015
-North Macadam,Single Mother,3-BR,Y,2015
-North Macadam,Senior,Studio,Y,2015
-North Macadam,Senior,1-BR,Y,2015
-North Macadam,Senior,2-BR,Y,2015
-North Macadam,Senior,3-BR,Y,2015
-North Macadam,Asian,Studio,Y,2015
-North Macadam,Asian,1-BR,Y,2015
-North Macadam,Asian,2-BR,Y,2015
-North Macadam,Asian,3-BR,N,2015
-North Macadam,Avg. Portland Household,Studio,N,2015
-North Macadam,Avg. Portland Household,1-BR,N,2015
-North Macadam,Avg. Portland Household,2-BR,Y,2015
-North Macadam,Avg. Portland Household,3-BR,N,2015
-Oregon Convention Center,Native American,Studio,Y,2015
-Oregon Convention Center,Native American,1-BR,Y,2015
-Oregon Convention Center,Native American,2-BR,Y,2015
-Oregon Convention Center,Native American,3-BR,N,2015
-Oregon Convention Center,Foreign-Born,Studio,N,2015
-Oregon Convention Center,Foreign-Born,1-BR,Y,2015
-Oregon Convention Center,Foreign-Born,2-BR,Y,2015
-Oregon Convention Center,Foreign-Born,3-BR,N,2015
-Oregon Convention Center,White,Studio,N,2015
-Oregon Convention Center,White,1-BR,N,2015
-Oregon Convention Center,White,2-BR,Y,2015
-Oregon Convention Center,White,3-BR,N,2015
-Oregon Convention Center,Latino,Studio,Y,2015
-Oregon Convention Center,Latino,1-BR,Y,2015
-Oregon Convention Center,Latino,2-BR,Y,2015
-Oregon Convention Center,Latino,3-BR,N,2015
-Oregon Convention Center,Black,Studio,Y,2015
-Oregon Convention Center,Black,1-BR,Y,2015
-Oregon Convention Center,Black,2-BR,Y,2015
-Oregon Convention Center,Black,3-BR,N,2015
-Oregon Convention Center,Single Mother,Studio,Y,2015
-Oregon Convention Center,Single Mother,1-BR,Y,2015
-Oregon Convention Center,Single Mother,2-BR,Y,2015
-Oregon Convention Center,Single Mother,3-BR,N,2015
-Oregon Convention Center,Senior,Studio,Y,2015
-Oregon Convention Center,Senior,1-BR,Y,2015
-Oregon Convention Center,Senior,2-BR,Y,2015
-Oregon Convention Center,Senior,3-BR,N,2015
-Oregon Convention Center,Asian,Studio,N,2015
-Oregon Convention Center,Asian,1-BR,N,2015
-Oregon Convention Center,Asian,2-BR,Y,2015
-Oregon Convention Center,Asian,3-BR,N,2015
-Oregon Convention Center,Avg. Portland Household,Studio,N,2015
-Oregon Convention Center,Avg. Portland Household,1-BR,N,2015
-Oregon Convention Center,Avg. Portland Household,2-BR,N,2015
-Oregon Convention Center,Avg. Portland Household,3-BR,N,2015
-River District,Native American,Studio,Y,2015
-River District,Native American,1-BR,Y,2015
-River District,Native American,2-BR,Y,2015
-River District,Native American,3-BR,N,2015
-River District,Foreign-Born,Studio,Y,2015
-River District,Foreign-Born,1-BR,Y,2015
-River District,Foreign-Born,2-BR,Y,2015
-River District,Foreign-Born,3-BR,N,2015
-River District,White,Studio,N,2015
-River District,White,1-BR,Y,2015
-River District,White,2-BR,Y,2015
-River District,White,3-BR,N,2015
-River District,Latino,Studio,Y,2015
-River District,Latino,1-BR,Y,2015
-River District,Latino,2-BR,Y,2015
-River District,Latino,3-BR,N,2015
-River District,Black,Studio,Y,2015
-River District,Black,1-BR,Y,2015
-River District,Black,2-BR,Y,2015
-River District,Black,3-BR,N,2015
-River District,Single Mother,Studio,Y,2015
-River District,Single Mother,1-BR,Y,2015
-River District,Single Mother,2-BR,Y,2015
-River District,Single Mother,3-BR,N,2015
-River District,Senior,Studio,Y,2015
-River District,Senior,1-BR,Y,2015
-River District,Senior,2-BR,Y,2015
-River District,Senior,3-BR,N,2015
-River District,Asian,Studio,N,2015
-River District,Asian,1-BR,Y,2015
-River District,Asian,2-BR,Y,2015
-River District,Asian,3-BR,N,2015
-River District,Avg. Portland Household,Studio,N,2015
-River District,Avg. Portland Household,1-BR,N,2015
-River District,Avg. Portland Household,2-BR,Y,2015
-River District,Avg. Portland Household,3-BR,N,2015
-South Park Blocks,Native American,Studio,Y,2015
-South Park Blocks,Native American,1-BR,Y,2015
-South Park Blocks,Native American,2-BR,Y,2015
-South Park Blocks,Native American,3-BR,Y,2015
-South Park Blocks,Foreign-Born,Studio,Y,2015
-South Park Blocks,Foreign-Born,1-BR,Y,2015
-South Park Blocks,Foreign-Born,2-BR,Y,2015
-South Park Blocks,Foreign-Born,3-BR,Y,2015
-South Park Blocks,White,Studio,N,2015
-South Park Blocks,White,1-BR,Y,2015
-South Park Blocks,White,2-BR,Y,2015
-South Park Blocks,White,3-BR,Y,2015
-South Park Blocks,Latino,Studio,Y,2015
-South Park Blocks,Latino,1-BR,Y,2015
-South Park Blocks,Latino,2-BR,Y,2015
-South Park Blocks,Latino,3-BR,Y,2015
-South Park Blocks,Black,Studio,Y,2015
-South Park Blocks,Black,1-BR,Y,2015
-South Park Blocks,Black,2-BR,Y,2015
-South Park Blocks,Black,3-BR,Y,2015
-South Park Blocks,Single Mother,Studio,Y,2015
-South Park Blocks,Single Mother,1-BR,Y,2015
-South Park Blocks,Single Mother,2-BR,Y,2015
-South Park Blocks,Single Mother,3-BR,Y,2015
-South Park Blocks,Senior,Studio,Y,2015
-South Park Blocks,Senior,1-BR,Y,2015
-South Park Blocks,Senior,2-BR,Y,2015
-South Park Blocks,Senior,3-BR,Y,2015
-South Park Blocks,Asian,Studio,Y,2015
-South Park Blocks,Asian,1-BR,Y,2015
-South Park Blocks,Asian,2-BR,Y,2015
-South Park Blocks,Asian,3-BR,Y,2015
-South Park Blocks,Avg. Portland Household,Studio,N,2015
-South Park Blocks,Avg. Portland Household,1-BR,N,2015
-South Park Blocks,Avg. Portland Household,2-BR,Y,2015
-South Park Blocks,Avg. Portland Household,3-BR,Y,2015
+Interstate Corridor,Native American,Studio,Y,2015
+Interstate Corridor,Native American,1-BR,Y,2015
+Interstate Corridor,Native American,2-BR,Y,2015
+Interstate Corridor,Native American,3-BR,Y,2015
+Interstate Corridor,Foreign-Born,Studio,N,2015
+Interstate Corridor,Foreign-Born,1-BR,Y,2015
+Interstate Corridor,Foreign-Born,2-BR,Y,2015
+Interstate Corridor,Foreign-Born,3-BR,N,2015
+Interstate Corridor,White,Studio,N,2015
+Interstate Corridor,White,1-BR,N,2015
+Interstate Corridor,White,2-BR,N,2015
+Interstate Corridor,White,3-BR,N,2015
+Interstate Corridor,Latino,Studio,Y,2015
+Interstate Corridor,Latino,1-BR,Y,2015
+Interstate Corridor,Latino,2-BR,Y,2015
+Interstate Corridor,Latino,3-BR,Y,2015
+Interstate Corridor,Black,Studio,Y,2015
+Interstate Corridor,Black,1-BR,Y,2015
+Interstate Corridor,Black,2-BR,Y,2015
+Interstate Corridor,Black,3-BR,Y,2015
+Interstate Corridor,Single Mother,Studio,Y,2015
+Interstate Corridor,Single Mother,1-BR,Y,2015
+Interstate Corridor,Single Mother,2-BR,Y,2015
+Interstate Corridor,Single Mother,3-BR,Y,2015
+Interstate Corridor,Senior,Studio,Y,2015
+Interstate Corridor,Senior,1-BR,Y,2015
+Interstate Corridor,Senior,2-BR,Y,2015
+Interstate Corridor,Senior,3-BR,Y,2015
+Interstate Corridor,Asian,Studio,N,2015
+Interstate Corridor,Asian,1-BR,N,2015
+Interstate Corridor,Asian,2-BR,N,2015
+Interstate Corridor,Asian,3-BR,N,2015
+Interstate Corridor,Avg. Portland Household,Studio,N,2015
+Interstate Corridor,Avg. Portland Household,1-BR,N,2015
+Interstate Corridor,Avg. Portland Household,2-BR,N,2015
+Interstate Corridor,Avg. Portland Household,3-BR,N,2015
+Lents-Foster,Native American,Studio,Y,2015
+Lents-Foster,Native American,1-BR,Y,2015
+Lents-Foster,Native American,2-BR,Y,2015
+Lents-Foster,Native American,3-BR,Y,2015
+Lents-Foster,Foreign-Born,Studio,N,2015
+Lents-Foster,Foreign-Born,1-BR,N,2015
+Lents-Foster,Foreign-Born,2-BR,N,2015
+Lents-Foster,Foreign-Born,3-BR,N,2015
+Lents-Foster,White,Studio,N,2015
+Lents-Foster,White,1-BR,N,2015
+Lents-Foster,White,2-BR,N,2015
+Lents-Foster,White,3-BR,N,2015
+Lents-Foster,Latino,Studio,N,2015
+Lents-Foster,Latino,1-BR,N,2015
+Lents-Foster,Latino,2-BR,N,2015
+Lents-Foster,Latino,3-BR,Y,2015
+Lents-Foster,Black,Studio,N,2015
+Lents-Foster,Black,1-BR,N,2015
+Lents-Foster,Black,2-BR,Y,2015
+Lents-Foster,Black,3-BR,Y,2015
+Lents-Foster,Single Mother,Studio,N,2015
+Lents-Foster,Single Mother,1-BR,N,2015
+Lents-Foster,Single Mother,2-BR,N,2015
+Lents-Foster,Single Mother,3-BR,Y,2015
+Lents-Foster,Senior,Studio,N,2015
+Lents-Foster,Senior,1-BR,N,2015
+Lents-Foster,Senior,2-BR,N,2015
+Lents-Foster,Senior,3-BR,Y,2015
+Lents-Foster,Asian,Studio,N,2015
+Lents-Foster,Asian,1-BR,N,2015
+Lents-Foster,Asian,2-BR,N,2015
+Lents-Foster,Asian,3-BR,N,2015
+Lents-Foster,Avg. Portland Household,Studio,N,2015
+Lents-Foster,Avg. Portland Household,1-BR,N,2015
+Lents-Foster,Avg. Portland Household,2-BR,N,2015
+Lents-Foster,Avg. Portland Household,3-BR,N,2015
