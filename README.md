@@ -29,6 +29,8 @@ $ git clone git@github.com:YOUR-USERNAME/housing-backend.git
 $ git clone https://github.com/YOUR-USERNAME/housing-backend.git
 ```
 
+* Run `cd housing-backend`
+
 Add upstream remote repository:
 ```
 # SSH:
@@ -126,15 +128,35 @@ echo DEPLOY_TARGET $DEPLOY_TARGET
 
 #### 3. Build & test the container services
 
-* Run `backend/bin/build-proj -l` to build your container locally
-* Run `backend/bin/test-proj -l` to test your container locally
+* Run `backend/bin/build-proj.sh -l` to build your container locally
+* Run `backend/bin/test-proj.sh -l` to test your container locally
 
-#### 4. Start the project
+#### 4. Start the container services: backend_housing_service_1 and backend_db_1
 
-* Make sure you've got a local copy of your project's `backend/backend/project_config.py` - Contact the DevOps Team 
-* Run `backend/bin/start-proj -l` to view your service's Swaggerized API
+* Make sure you've got a local copy of your project's `backend/backend/project_config.py` - contact the DevOps Team
+* Edit the AWS dictionary of `project_config.py` to:
+```
+'ENGINE': 'django.db.backends.postgresql_psycopg2',
+'NAME': 'postgres',
+'HOST': 'db',
+'PORT': '5432',
+'USER': 'postgres',
+'PASSWORD': '',
+```
+* Run `backend/bin/start-proj.sh -l` then view the API from a web browser (localhost:8000/housing/)
 
-### (troys, original, 15apr) Start:
+#### 5. Clean up
+
+* Press Ctrl+C to terminate the services
+* Run `backend/bin/scrub-proj.sh` to stop any containers and remove all images
+
+### Access and examine your local containers:
+
+* After Step 4. the start-proj.sh will run the services via docker-compose up
+* Open another terminal and change to the `housing-backend` directory
+* Run `backend/bin/env.sh` to prepare the environment
+
+~~~
 
 Run Django and PostgreSQL:
 ```
@@ -164,24 +186,27 @@ $ docker-compose down   # (if not already shut down)
 $ docker-compose up --build
 ```
 
+~~~
+
 ### Container access examples:
 
 Run manage.py command directly:
 
 ```
-docker-compose exec web ./manage.py <command>
+cd backend
+docker-compose -f local-docker-compose.yml exec housing-service ./manage.py <command>
 ```
 
 Run the Python shell:
 
 ```
-docker-compose exec web ./manage.py shell
+docker-compose -f local-docker-compose.yml exec housing-service ./manage.py shell
 ```
 
 Run the PostgreSQL shell:
 
 ```
-docker-compose exec --user postgres db psql
+docker-compose -f local-docker-compose.yml exec --user postgres db psql
 ```
 
 ### Develop!
@@ -191,34 +216,6 @@ Have at it!
 View the API GUI at localhost:8000.
 
 Feel free to explore the [API docs](https://github.com/hackoregon/housing-backend/tree/backend/docs/API.md).
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-See the DevOps page of the [Wiki](https://github.com/hackoregon/housing-backend/wiki) for notes about how to deploy this on a live system
-
-## Built With
-
-See the [Wiki](https://github.com/hackoregon/housing-backend/wiki) for notes about the front-end, datbases, and web framework used for the project
 
 ## Contributing
 
