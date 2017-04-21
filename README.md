@@ -144,6 +144,7 @@ echo DEPLOY_TARGET $DEPLOY_TARGET
 'PASSWORD': '',
 ```
 * Run `backend/bin/start-proj.sh -l` then view the API from a web browser (localhost:8000/housing/)
+* Explore the [API documentation](https://github.com/hackoregon/housing-backend/tree/backend/docs/API.md).
 
 #### 5. Clean up
 
@@ -155,38 +156,6 @@ echo DEPLOY_TARGET $DEPLOY_TARGET
 * After Step 4. the start-proj.sh will run the services via docker-compose up
 * Open another terminal and change to the `housing-backend` directory
 * Run `backend/bin/env.sh` to prepare the environment
-
-~~~
-
-Run Django and PostgreSQL:
-```
-$ cd housing-backend/backend
-$ docker-compose up
-```
-
-You can also run it in the background:
-```
-$ docker-compose up -d
-```
-It looks like it starts faster this way, but give it a bit to import data into
-the database in the background before trying to view it in a browser.
-
-### Shutdown:
-
-```
-$ docker-compose down
-  # or
-$ docker-compose down --rmi all   # remove images to save disk space
-```
-
-### Rebuild images (necessary if `requirements.txt` changes):
-
-```
-$ docker-compose down   # (if not already shut down)
-$ docker-compose up --build
-```
-
-~~~
 
 ### Container access examples:
 
@@ -208,14 +177,6 @@ Run the PostgreSQL shell:
 ```
 docker-compose -f local-docker-compose.yml exec --user postgres db psql
 ```
-
-### Develop!
-
-Have at it!
-
-View the API GUI at localhost:8000.
-
-Feel free to explore the [API docs](https://github.com/hackoregon/housing-backend/tree/backend/docs/API.md).
 
 ## Contributing
 
