@@ -11,6 +11,7 @@ services:
     - CONFIG_BUCKET=${CONFIG_BUCKET}
     - DEPLOY_TARGET=${DEPLOY_TARGET}
     - PROJ_SETTINGS_DIR=${PROJ_SETTINGS_DIR}
+    - LOAD_DATASOURCES=${LOAD_DATASOURCES}
     build: .
     image: "${DOCKER_REPO}/${DEPLOY_TARGET}/${DOCKER_IMAGE}:latest"
     command: /code/bin/docker-entrypoint.sh
