@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Affordable, NeighborhoodRent, HousingProductionVsCost
+from .models import Affordable, NeighborhoodRent, HousingProductionVsCost, HHToolTip, PopToolTip
 
 
 class AffordableSerializer(serializers.ModelSerializer):
@@ -42,3 +42,36 @@ class ProdVsCostSerializer(serializers.ModelSerializer):
                 'home_price_growth',
                 'rent_growth'
                 )
+
+
+class HHToolTipSerializer(serializers.ModelSerializer):
+    neighborhood = serializers.CharField(source='neighborhood.name', read_only=True)
+    NP_ID = serializers.IntegerField(source='neighborhood.NP_ID', read_only=True)
+    year = serializers.CharField(source='year.year', read_only=True)
+
+
+    class Meta:
+        model = HHToolTip
+        fields = (
+            'NP_ID',
+            'neighborhood',
+            'demographic',
+            'households',
+            'year',
+        )
+
+
+class HHToolTipSerializer(serializers.ModelSerializer):
+    neighborhood = serializers.CharField(source='neighborhood.name', read_only=True)
+    NP_ID = serializers.IntegerField(source='neighborhood.NP_ID', read_only=True)
+    year = serializers.CharField(source='year.year', read_only=True)
+
+    class Meta:
+        model = PopToolTip
+        fields = (
+            'NP_ID',
+            'neighborhood',
+            'demographic',
+            'households',
+            'year',
+        )
