@@ -112,12 +112,15 @@ $ git branch -a
 export DOCKER_IMAGE=housing-service
 export PROJ_SETTINGS_DIR=housingAPI
 export DEPLOY_TARGET=dev
+export LOAD_DATASOURCES=yes
+
 echo "##############################"
 echo  Local Project Environment
 echo "##############################"
 echo DOCKER_IMAGE $DOCKER_IMAGE
 echo PROJ_SETTINGS_DIR $PROJ_SETTINGS_DIR
 echo DEPLOY_TARGET $DEPLOY_TARGET
+echo LOAD_DATASOURCES $LOAD_DATASOURCES
 ```
 
 * Run `chmod +x backend/bin/env.sh` to make the script file executable
@@ -135,22 +138,19 @@ AWS = {
     'PASSWORD': '',
     }
 
-DJANGO_SECRET_KEY = 'notthatsecret'
+DJANGO_SECRET_KEY = '<secretkey>' # Contact DevOps for <secretkey>
 
 # Note: the 192.168.99.100 enables testing with Docker Toolbox for Mac and Windows
 ALLOWED_HOSTS = ['127.0.0.1',
                  'localhost',
-                 '192.168.99.100',
-                 'hacko-integration-658279555.us-west-2.elb.amazonaws.com',
-                 'service.civicpdx.org',
-                 'service.civicpdx.com']
+                 '192.168.99.100']
 ```
 
 #### 2. Setup your local environment
 
 * Run `source env.sh` to setup your environment
 
-#### 3. Build & test the container services
+#### 3. (Optiona) Build & test the container services
 
 * Run `backend/bin/build-proj.sh -l` to build your container locally
 * Run `backend/bin/test-proj.sh -l` to test your container locally

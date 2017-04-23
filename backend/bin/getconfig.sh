@@ -10,17 +10,17 @@ echo "##########################################################################
 echo  "getconfig.sh: PROJ_SETTINGS_DIR=" $PROJ_SETTINGS_DIR
 echo  "getconfig.sh: DEPLOY_TARGET=" $DEPLOY_TARGET
 echo  "getconfig.sh: CONFIG_BUCKET=" $CONFIG_BUCKET
+echo  "getconfig.sh: LOAD_DATASOURCES=" $LOAD_DATASOURCES
 
 if [ "$DEPLOY_TARGET" == "dev" ]; then
     echo -e  USING LOCAL CONFIG - MAKE SURE YOU HAVE A LOCAL CONFIG FILE: $CONFIG_FILE
 else
-    echo  getconfig.sh: CONFIG_BUCKET= $CONFIG_BUCKET
-    echo  getconfig.sh: DEPLOY_TARGET= $DEPLOY_TARGET
+    echo  "getconfig.sh: CONFIG_BUCKET=" $CONFIG_BUCKET
+    echo  "getconfig.sh: DEPLOY_TARGET=" $DEPLOY_TARGET
 
     export PATH=$PATH:~/.local/bin # necessary to help locate the awscli binaries which are pip installed --user
     aws s3 cp \
           s3://$CONFIG_BUCKET/$DEPLOY_TARGET/$CONFIG_FILE \
           ./backend/backend/$CONFIG_FILE;
     ls -l ./backend/backend
-
 fi
