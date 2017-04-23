@@ -1,7 +1,5 @@
 # Data Sources Branch
-This branch is used for version control and review of CSVs derived from the variety of data sources used by the Housing Team. See the [Data Sources Wiki Page] (https://github.com/hackoregon/housing-17/wiki/Data-Sources) for more information.
-
-Note that because of the potential for very large files this branch should not be merged with the integration branch `master` - see the [DevOps wiki] (https://github.com/hackoregon/housing-17/wiki/DevOps) for more information on our approach to deployment of data sources.
+This branch is used for version control and review of CSVs derived from the variety of data sources used by the Housing Team. Note that because of the potential for very large files this branch should not be merged with the integration branch `master`.
 
 ## Getting Started
 
@@ -9,12 +7,12 @@ These instructions will get you a copy of the project up and running on your loc
 ```
 # From your local machine, set up Git
 # From GitHub, set up GitHub Authentication
-# From GitHub, fork the Repo at `https://github.com/hackoregon/housing-17`
+# From GitHub, fork the Repo at `https://github.com/hackoregon/housing-backend`
 
 # Clone the GitHub repository using SSH or HTTPS
-$ git clone git@github.com:YOUR-USERNAME/housing-17.git
+$ git clone git@github.com:YOUR-USERNAME/housing-backend.git
 # or...
-$ git clone https://github.com/YOUR-USERNAME/housing-17.git
+$ git clone https://github.com/YOUR-USERNAME/housing-backend.git
 
 # Refresh
 $ git pull origin master
