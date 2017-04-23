@@ -1,5 +1,9 @@
 #! /bin/bash
 
+echo "#################################################################################################################"
+echo "Running docker-push.sh... run all configured unit tests inside Docker container"
+echo "#################################################################################################################"
+
 # Tag, Push and Deploy only if it's not a pull request
 if [ -z "$TRAVIS_PULL_REQUEST" ] || [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   # Push only if we're testing the master branch

@@ -16,11 +16,11 @@ while getopts ":lt" opt; do
     case "$opt" in
         l)
           # This is an unfortunate workaround to the subdirectory that is used to contain all app code
-          echo  Running with local-docker-compose.yml...
+          echo -e "Running with local-docker-compose.yml..."
           docker-compose -f backend/local-docker-compose.yml up --build
           ;;
         t)
-        echo  Running with travis-docker-compose.yml...
+        echo -e "Running with travis-docker-compose.yml..."
           docker-compose -f backend/travis-docker-compose.yml up
           ;;
         *)
