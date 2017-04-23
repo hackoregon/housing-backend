@@ -52,3 +52,4 @@ WebTest==2.0.25
 wheel==0.24.0
 gevent==1.2.1
 psycogreen
+whitenoise==3.3.0
