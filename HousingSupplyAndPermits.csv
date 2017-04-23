@@ -1,145 +1,145 @@
-Neighborhood,ReportYear,SingleFamilyUnits,MultiFamilyUnits,SingleFamilyPermits,MultiFamilyPermits
-122nd-Division,2010,4405,3719,44,0
-122nd-Division,2011,4441,3719,45,0
-122nd-Division,2012,4468,3719,26,9
-122nd-Division,2013,4494,3736,49,0
-122nd-Division,2014,4515,3768,43,0
-122nd-Division,2015,4543,3768,13,0
-Belmont-Hawthorne-Division,2010,7168,6365,14,24
-Belmont-Hawthorne-Division,2011,7180,6365,30,42
-Belmont-Hawthorne-Division,2012,7199,6396,27,249
-Belmont-Hawthorne-Division,2013,7222,6583,49,538
-Belmont-Hawthorne-Division,2014,7258,6957,51,115
-Belmont-Hawthorne-Division,2015,7302,7192,32,235
-Centennial-Glenfair-Wilkes,2010,5632,4663,16,30
-Centennial-Glenfair-Wilkes,2011,5652,4679,11,0
-Centennial-Glenfair-Wilkes,2012,5659,4679,56,27
-Centennial-Glenfair-Wilkes,2013,5667,4728,25,0
-Centennial-Glenfair-Wilkes,2014,5679,4806,7,78
-Centennial-Glenfair-Wilkes,2015,5684,4806,6,0
-Central City,2010,1116,22994,0,282
-Central City,2011,1116,23144,6,220
-Central City,2012,1121,23408,2,543
-Central City,2013,1122,23538,10,218
-Central City,2014,1127,24018,6,1797
-Central City,2015,1130,25765,8,1722
-Forest Park-Northwest Hills,2010,3126,663,10,0
-Forest Park-Northwest Hills,2011,3134,663,16,0
-Forest Park-Northwest Hills,2012,3144,663,12,0
-Forest Park-Northwest Hills,2013,3161,663,28,0
-Forest Park-Northwest Hills,2014,3176,663,18,0
-Forest Park-Northwest Hills,2015,3197,663,15,0
-Gateway,2010,11625,6904,10,47
-Gateway,2011,11634,6904,21,0
-Gateway,2012,11648,6904,26,127
-Gateway,2013,11664,7091,30,0
-Gateway,2014,11692,7201,28,289
-Gateway,2015,11703,7340,24,72
-Hayden Island,2010,934,2138,0,0
-Hayden Island,2011,934,2138,0,0
-Hayden Island,2012,934,2138,1,0
-Hayden Island,2013,935,2138,1,95
-Hayden Island,2014,935,2138,2,140
-Hayden Island,2015,937,2422,1,0
-Hillsdale-Multnomah-Barbur,2010,5872,3384,12,0
-Hillsdale-Multnomah-Barbur,2011,5877,3384,9,0
-Hillsdale-Multnomah-Barbur,2012,5892,3384,14,119
-Hillsdale-Multnomah-Barbur,2013,5904,3384,23,0
-Hillsdale-Multnomah-Barbur,2014,5930,3506,39,0
-Hillsdale-Multnomah-Barbur,2015,5956,3506,32,0
-Hollywood,2010,8055,6658,9,50
-Hollywood,2011,8057,6660,12,47
-Hollywood,2012,8067,6786,12,145
-Hollywood,2013,8077,6859,30,379
-Hollywood,2014,8096,7279,26,124
-Hollywood,2015,8107,7360,16,37
-Interstate Corridor,2010,12842,5587,53,107
-Interstate Corridor,2011,12879,5703,49,81
-Interstate Corridor,2012,12916,5794,105,280
-Interstate Corridor,2013,13006,5945,110,432
-Interstate Corridor,2014,13107,6702,122,389
-Interstate Corridor,2015,13185,6898,115,584
-Lents-Foster,2010,14132,4649,78,0
-Lents-Foster,2011,14187,4653,48,0
-Lents-Foster,2012,14237,4667,71,0
-Lents-Foster,2013,14304,4669,110,0
-Lents-Foster,2014,14407,4675,96,6
-Lents-Foster,2015,14494,4681,113,49
-MLK-Alberta,2010,11752,2288,64,40
-MLK-Alberta,2011,11797,2335,53,0
-MLK-Alberta,2012,11853,2335,77,8
-MLK-Alberta,2013,11929,2345,76,78
-MLK-Alberta,2014,11987,2429,97,52
-MLK-Alberta,2015,12086,2465,96,44
-Montavilla,2010,10505,4797,17,0
-Montavilla,2011,10523,4799,16,0
-Montavilla,2012,10538,4799,30,15
-Montavilla,2013,10563,4799,40,3
-Montavilla,2014,10598,4813,61,28
-Montavilla,2015,10647,4839,79,37
-Northwest,2010,2777,10444,1,0
-Northwest,2011,2781,10561,8,272
-Northwest,2012,2783,10751,7,295
-Northwest,2013,2790,11081,8,306
-Northwest,2014,2794,11709,11,775
-Northwest,2015,2802,11969,3,815
-Parkrose-Argay,2010,2851,2697,3,0
-Parkrose-Argay,2011,2854,2697,0,0
-Parkrose-Argay,2012,2854,2697,0,0
-Parkrose-Argay,2013,2854,2697,0,0
-Parkrose-Argay,2014,2854,2700,2,0
-Parkrose-Argay,2015,2854,2700,1,0
-Pleasant Valley,2010,4048,1324,6,0
-Pleasant Valley,2011,4054,1324,16,0
-Pleasant Valley,2012,4067,1324,12,0
-Pleasant Valley,2013,4075,1326,21,0
-Pleasant Valley,2014,4101,1326,20,0
-Pleasant Valley,2015,4115,1326,23,0
-Raleigh Hills,2010,4663,1209,8,0
-Raleigh Hills,2011,4672,1209,7,0
-Raleigh Hills,2012,4675,1209,7,15
-Raleigh Hills,2013,4683,1224,14,0
-Raleigh Hills,2014,4699,1224,25,0
-Raleigh Hills,2015,4721,1224,20,22
-Roseway-Cully,2010,11221,4499,16,0
-Roseway-Cully,2011,11243,4499,21,0
-Roseway-Cully,2012,11263,4537,29,0
-Roseway-Cully,2013,11283,4545,19,0
-Roseway-Cully,2014,11306,4547,28,0
-Roseway-Cully,2015,11337,4547,48,0
-Sellwood-Moreland-Brooklyn,2010,4592,3722,15,0
-Sellwood-Moreland-Brooklyn,2011,4609,3722,23,6
-Sellwood-Moreland-Brooklyn,2012,4628,3728,34,1
-Sellwood-Moreland-Brooklyn,2013,4651,3728,42,153
-Sellwood-Moreland-Brooklyn,2014,4691,3894,43,68
-Sellwood-Moreland-Brooklyn,2015,4733,3916,42,148
-South Portland-Maraquam Hill,2010,2816,4536,4,0
-South Portland-Maraquam Hill,2011,2820,4536,5,209
-South Portland-Maraquam Hill,2012,2823,4745,12,0
-South Portland-Maraquam Hill,2013,2832,4889,11,156
-South Portland-Maraquam Hill,2014,2843,5136,3,340
-South Portland-Maraquam Hill,2015,2847,5789,13,751
-St. Johns,2010,7356,3665,36,52
-St. Johns,2011,7383,3681,40,5
-St. Johns,2012,7409,3689,50,0
-St. Johns,2013,7449,3694,64,245
-St. Johns,2014,7503,3945,65,31
-St. Johns,2015,7562,3964,70,26
-Tryon Creek-South Terwilliger,2010,3656,258,12,0
-Tryon Creek-South Terwilliger,2011,3665,258,14,1
-Tryon Creek-South Terwilliger,2012,3677,258,12,0
-Tryon Creek-South Terwilliger,2013,3691,258,14,0
-Tryon Creek-South Terwilliger,2014,3702,258,16,0
-Tryon Creek-South Terwilliger,2015,3716,258,14,0
-West Portland,2010,4250,1726,8,0
-West Portland,2011,4255,1726,8,0
-West Portland,2012,4261,1726,5,0
-West Portland,2013,4267,1726,15,0
-West Portland,2014,4279,1726,15,0
-West Portland,2015,4297,1726,23,0
-Woodstock,2010,6867,3540,21,0
-Woodstock,2011,6890,3544,14,0
-Woodstock,2012,6900,3546,27,0
-Woodstock,2013,6927,3548,34,26
-Woodstock,2014,6957,3560,62,4
-Woodstock,2015,7004,3584,40,0
+NP_ID,Neighborhood,ReportYear,SingleFamilyUnits,MultiFamilyUnits,SingleFamilyPermits,MultiFamilyPermits
+1,122nd-Division,2010,4405,3719,44,0
+1,122nd-Division,2011,4441,3719,45,0
+1,122nd-Division,2012,4468,3719,26,9
+1,122nd-Division,2013,4494,3736,49,0
+1,122nd-Division,2014,4515,3768,43,0
+1,122nd-Division,2015,4543,3768,13,0
+2,Belmont-Hawthorne-Division,2010,7168,6365,14,24
+2,Belmont-Hawthorne-Division,2011,7180,6365,30,42
+2,Belmont-Hawthorne-Division,2012,7199,6396,27,249
+2,Belmont-Hawthorne-Division,2013,7222,6583,49,538
+2,Belmont-Hawthorne-Division,2014,7258,6957,51,115
+2,Belmont-Hawthorne-Division,2015,7302,7192,32,235
+3,Centennial-Glenfair-Wilkes,2010,5632,4663,16,30
+3,Centennial-Glenfair-Wilkes,2011,5652,4679,11,0
+3,Centennial-Glenfair-Wilkes,2012,5659,4679,56,27
+3,Centennial-Glenfair-Wilkes,2013,5667,4728,25,0
+3,Centennial-Glenfair-Wilkes,2014,5679,4806,7,78
+3,Centennial-Glenfair-Wilkes,2015,5684,4806,6,0
+4,Central City,2010,1116,22994,0,282
+4,Central City,2011,1116,23144,6,220
+4,Central City,2012,1121,23408,2,543
+4,Central City,2013,1122,23538,10,218
+4,Central City,2014,1127,24018,6,1797
+4,Central City,2015,1130,25765,8,1722
+5,Forest Park-Northwest Hills,2010,3126,663,10,0
+5,Forest Park-Northwest Hills,2011,3134,663,16,0
+5,Forest Park-Northwest Hills,2012,3144,663,12,0
+5,Forest Park-Northwest Hills,2013,3161,663,28,0
+5,Forest Park-Northwest Hills,2014,3176,663,18,0
+5,Forest Park-Northwest Hills,2015,3197,663,15,0
+6,Gateway,2010,11625,6904,10,47
+6,Gateway,2011,11634,6904,21,0
+6,Gateway,2012,11648,6904,26,127
+6,Gateway,2013,11664,7091,30,0
+6,Gateway,2014,11692,7201,28,289
+6,Gateway,2015,11703,7340,24,72
+7,Hayden Island,2010,934,2138,0,0
+7,Hayden Island,2011,934,2138,0,0
+7,Hayden Island,2012,934,2138,1,0
+7,Hayden Island,2013,935,2138,1,95
+7,Hayden Island,2014,935,2138,2,140
+7,Hayden Island,2015,937,2422,1,0
+8,Hillsdale-Multnomah-Barbur,2010,5872,3384,12,0
+8,Hillsdale-Multnomah-Barbur,2011,5877,3384,9,0
+8,Hillsdale-Multnomah-Barbur,2012,5892,3384,14,119
+8,Hillsdale-Multnomah-Barbur,2013,5904,3384,23,0
+8,Hillsdale-Multnomah-Barbur,2014,5930,3506,39,0
+8,Hillsdale-Multnomah-Barbur,2015,5956,3506,32,0
+9,Hollywood,2010,8055,6658,9,50
+9,Hollywood,2011,8057,6660,12,47
+9,Hollywood,2012,8067,6786,12,145
+9,Hollywood,2013,8077,6859,30,379
+9,Hollywood,2014,8096,7279,26,124
+9,Hollywood,2015,8107,7360,16,37
+10,Interstate Corridor,2010,12842,5587,53,107
+10,Interstate Corridor,2011,12879,5703,49,81
+10,Interstate Corridor,2012,12916,5794,105,280
+10,Interstate Corridor,2013,13006,5945,110,432
+10,Interstate Corridor,2014,13107,6702,122,389
+10,Interstate Corridor,2015,13185,6898,115,584
+11,Lents-Foster,2010,14132,4649,78,0
+11,Lents-Foster,2011,14187,4653,48,0
+11,Lents-Foster,2012,14237,4667,71,0
+11,Lents-Foster,2013,14304,4669,110,0
+11,Lents-Foster,2014,14407,4675,96,6
+11,Lents-Foster,2015,14494,4681,113,49
+12,MLK-Alberta,2010,11752,2288,64,40
+12,MLK-Alberta,2011,11797,2335,53,0
+12,MLK-Alberta,2012,11853,2335,77,8
+12,MLK-Alberta,2013,11929,2345,76,78
+12,MLK-Alberta,2014,11987,2429,97,52
+12,MLK-Alberta,2015,12086,2465,96,44
+13,Montavilla,2010,10505,4797,17,0
+13,Montavilla,2011,10523,4799,16,0
+13,Montavilla,2012,10538,4799,30,15
+13,Montavilla,2013,10563,4799,40,3
+13,Montavilla,2014,10598,4813,61,28
+13,Montavilla,2015,10647,4839,79,37
+14,Northwest,2010,2777,10444,1,0
+14,Northwest,2011,2781,10561,8,272
+14,Northwest,2012,2783,10751,7,295
+14,Northwest,2013,2790,11081,8,306
+14,Northwest,2014,2794,11709,11,775
+14,Northwest,2015,2802,11969,3,815
+15,Parkrose-Argay,2010,2851,2697,3,0
+15,Parkrose-Argay,2011,2854,2697,0,0
+15,Parkrose-Argay,2012,2854,2697,0,0
+15,Parkrose-Argay,2013,2854,2697,0,0
+15,Parkrose-Argay,2014,2854,2700,2,0
+15,Parkrose-Argay,2015,2854,2700,1,0
+16,Pleasant Valley,2010,4048,1324,6,0
+16,Pleasant Valley,2011,4054,1324,16,0
+16,Pleasant Valley,2012,4067,1324,12,0
+16,Pleasant Valley,2013,4075,1326,21,0
+16,Pleasant Valley,2014,4101,1326,20,0
+16,Pleasant Valley,2015,4115,1326,23,0
+17,Raleigh Hills,2010,4663,1209,8,0
+17,Raleigh Hills,2011,4672,1209,7,0
+17,Raleigh Hills,2012,4675,1209,7,15
+17,Raleigh Hills,2013,4683,1224,14,0
+17,Raleigh Hills,2014,4699,1224,25,0
+17,Raleigh Hills,2015,4721,1224,20,22
+18,Roseway-Cully,2010,11221,4499,16,0
+18,Roseway-Cully,2011,11243,4499,21,0
+18,Roseway-Cully,2012,11263,4537,29,0
+18,Roseway-Cully,2013,11283,4545,19,0
+18,Roseway-Cully,2014,11306,4547,28,0
+18,Roseway-Cully,2015,11337,4547,48,0
+19,Sellwood-Moreland-Brooklyn,2010,4592,3722,15,0
+19,Sellwood-Moreland-Brooklyn,2011,4609,3722,23,6
+19,Sellwood-Moreland-Brooklyn,2012,4628,3728,34,1
+19,Sellwood-Moreland-Brooklyn,2013,4651,3728,42,153
+19,Sellwood-Moreland-Brooklyn,2014,4691,3894,43,68
+19,Sellwood-Moreland-Brooklyn,2015,4733,3916,42,148
+20,South Portland-Maraquam Hill,2010,2816,4536,4,0
+20,South Portland-Maraquam Hill,2011,2820,4536,5,209
+20,South Portland-Maraquam Hill,2012,2823,4745,12,0
+20,South Portland-Maraquam Hill,2013,2832,4889,11,156
+20,South Portland-Maraquam Hill,2014,2843,5136,3,340
+20,South Portland-Maraquam Hill,2015,2847,5789,13,751
+21,St. Johns,2010,7356,3665,36,52
+21,St. Johns,2011,7383,3681,40,5
+21,St. Johns,2012,7409,3689,50,0
+21,St. Johns,2013,7449,3694,64,245
+21,St. Johns,2014,7503,3945,65,31
+21,St. Johns,2015,7562,3964,70,26
+22,Tryon Creek-South Terwilliger,2010,3656,258,12,0
+22,Tryon Creek-South Terwilliger,2011,3665,258,14,1
+22,Tryon Creek-South Terwilliger,2012,3677,258,12,0
+22,Tryon Creek-South Terwilliger,2013,3691,258,14,0
+22,Tryon Creek-South Terwilliger,2014,3702,258,16,0
+22,Tryon Creek-South Terwilliger,2015,3716,258,14,0
+23,West Portland,2010,4250,1726,8,0
+23,West Portland,2011,4255,1726,8,0
+23,West Portland,2012,4261,1726,5,0
+23,West Portland,2013,4267,1726,15,0
+23,West Portland,2014,4279,1726,15,0
+23,West Portland,2015,4297,1726,23,0
+24,Woodstock,2010,6867,3540,21,0
+24,Woodstock,2011,6890,3544,14,0
+24,Woodstock,2012,6900,3546,27,0
+24,Woodstock,2013,6927,3548,34,26
+24,Woodstock,2014,6957,3560,62,4
+24,Woodstock,2015,7004,3584,40,0
