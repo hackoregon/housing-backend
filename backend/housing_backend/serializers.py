@@ -61,7 +61,7 @@ class HHToolTipSerializer(serializers.ModelSerializer):
         )
 
 
-class HHToolTipSerializer(serializers.ModelSerializer):
+class PopToolTipSerializer(serializers.ModelSerializer):
     neighborhood = serializers.CharField(source='neighborhood.name', read_only=True)
     NP_ID = serializers.IntegerField(source='neighborhood.NP_ID', read_only=True)
     year = serializers.CharField(source='year.year', read_only=True)
@@ -71,7 +71,7 @@ class HHToolTipSerializer(serializers.ModelSerializer):
         fields = (
             'NP_ID',
             'neighborhood',
-            'demographic',
-            'households',
+            'ethnicity',
+            'population',
             'year',
         )
