@@ -13,7 +13,7 @@ def loadAffordability(file):
 
     for index, row in dframe.iterrows():
         ry, _ = ReportYear.objects.get_or_create(year=row['Year'])
-        n, _ = Neighborhood.objects.get_or_create(name=row['Neighborhood'])
+        n, _ = Neighborhood.objects.get_or_create(NP_ID=row['NP_ID'])
         d, _ = Demographic.objects.get_or_create(name=row['Demographic'])
         h, _ = HousingSize.objects.get_or_create(household_type=row['Unit_Size'])
         ry.save()
@@ -90,7 +90,7 @@ def loadHousingSupplyandPermits(file):
 
     for index, row in dframe.iterrows():
         ry, _ = ReportYear.objects.get_or_create(year=row['ReportYear'])
-        n, _ = Neighborhood.objects.get_or_create(name=row['Neighborhood'].strip())
+        n, _ = Neighborhood.objects.get_or_create(NP_ID=row['NP_ID'])
         hs = HousingSupply(
                             neighborhood=n,
                             report_year=ry,
@@ -114,7 +114,7 @@ def loadHHToolTip(file):
 
     for index, row in dframe.iterrows():
         ry, _ = ReportYear.objects.get_or_create(year=row['Year'])
-        n, _ = Neighborhood.objects.get_or_create(name=row['NP_ID'])
+        n, _ = Neighborhood.objects.get_or_create(NP_ID=row['NP_ID'])
 
         this_tooltip = HHToolTip(
                                 neighborhood=n,
@@ -146,7 +146,7 @@ def loadPopToolTip(file):
 
 fileDemo = "https://raw.githubusercontent.com/hackoregon/housing-backend/datasources/DemographicProfiles_w2015_Profiles_2-15-17.csv"
 fileNeighborhoods = "https://raw.githubusercontent.com/hackoregon/housing-backend/datasources/NeighborhoodProfiles.csv"
-fileAfford = "https://raw.githubusercontent.com/jaymcgrath/housing-17/datasources/SoHAffordabilityDatabyNeighborhoodUpload.csv"
+fileAfford = "https://raw.githubusercontent.com/hackoregon/housing-backend/datasources/SoHAffordabilityDatabyNeighborhoodUpload.csv"
 fileRent = "https://raw.githubusercontent.com/hackoregon/housing-backend/datasources/NeighborhoodHousingMarket.csv"
 fileSupply = "https://raw.githubusercontent.com/hackoregon/housing-backend/datasources/HousingSupplyAndPermits.csv"
 fileHHToolTips = "https://raw.githubusercontent.com/hackoregon/housing-backend/datasources/hhToolTips.csv"
