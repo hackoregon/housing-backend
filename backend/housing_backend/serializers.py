@@ -1,71 +1,44 @@
 from rest_framework import serializers
-from housing_backend.models import *
-
-
-class DemographicSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = Demographic
-        exclude = ('id',)
-
-
-class HousingSizeSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = HousingSize
-        exclude = ('id',)
-
-
-class NeighborhoodSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = Neighborhood
-        exclude = ('id',)
-        depth = 1
-
-class ReportYearSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = ReportYear
-        exclude = ('id',)
-        depth = 1
+from .models import Affordable, NeighborhoodRent, HousingProductionVsCost
 
 
 class AffordableSerializer(serializers.ModelSerializer):
     demographic = serializers.CharField(source='demographic.name', read_only=True)
     housing_size = serializers.CharField(source='housing_size.household_type', read_only=True)
     neighborhood = serializers.CharField(source='neighborhood.name', read_only=True)
+    NP_ID = serializers.IntegerField(source='neighborhood.NP_ID', read_only=True)
     year = serializers.IntegerField(source='year.year', read_only=True)
 
     class Meta:
         model = Affordable
-        fields = ('affordable', 'demographic', 'housing_size', 'neighborhood', 'year')
+        fields = ('affordable', 'demographic', 'housing_size', 'NP_ID', 'neighborhood', 'year')
 
 
 class RentSerializer(serializers.ModelSerializer):
     year = serializers.IntegerField(source='year.year', read_only=True)
     housing_size = serializers.CharField(source='housing_size.household_type', read_only=True)
-    nh_id = serializers.CharField(source='nh_id.name', read_only=True)
+    nh_id = serializers.IntegerField(source='nh_id.NP_ID', read_only=True)
+    nh_name = serializers.CharField(source='nh_id.name', read_only=True)
 
     class Meta:
         model = NeighborhoodRent
-        fields = ('year', 'rent_amt', 'housing_size', 'nh_id')
+        fields = ('year', 'rent_amt', 'housing_size', 'nh_id', 'nh_name')
         depth = 1
 
 
 class ProdVsCostSerializer(serializers.ModelSerializer):
     neighborhood = serializers.CharField(source='neighborhood.name', read_only=True)
+    NP_ID = serializers.IntegerField(source='neighborhood.NP_ID', read_only=True)
     year = serializers.CharField(source='year.year', read_only=True)
+
     class Meta:
         model = HousingProductionVsCost
         fields = (
                 'year',
+                'NP_ID',
                 'neighborhood',
                 'single_unit_growth',
                 'multi_unit_growth',
                 'home_price_growth',
                 'rent_growth'
                 )
-
-
-

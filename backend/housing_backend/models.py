@@ -72,7 +72,8 @@ class HousingSize(models.Model):
 
       
 class Neighborhood(models.Model):
-    name = models.CharField(max_length=50)
+    NP_ID = models.IntegerField(null=False, help_text='Unique ID different than django ORM pk')
+    name = models.CharField(max_length=50, help_text='Neighborhood Name')
 
     #shape_file = models.FieldFile() possibility if shape file data needs to be stored
 
@@ -81,8 +82,6 @@ class Neighborhood(models.Model):
 
     def __repr__(self):
         return self.name
-
-
 
 
 class HousingSupply(models.Model):
@@ -99,6 +98,7 @@ class HousingSupply(models.Model):
     def __repr__(self):
         template = "HousingSupply: {nh} {yr}"
         return template.format(nh=self.neighborhood, yr=self.report_year)
+
 
 class HousingPermits(models.Model):
     """ Models single year of one neighborhood's housing permits issued """
@@ -126,3 +126,23 @@ class HousingProductionVsCost(models.Model):
     home_price_growth = models.FloatField(help_text="Home price percent growth vs previous year")
     rent_growth = models.FloatField(help_text="Rent percent growth vs previous year")
 
+
+class HHToolTip(models.Model):
+    """ Models HHtooltip data """
+    neighborhood = models.ForeignKey('Neighborhood', on_delete=models.CASCADE,
+                                     help_text='Neighborhood by census tract ')
+    demographic = models.CharField(max_length=50,
+                                   help_text='String representation of household composition, ex: Households w Children')
+    households = models.IntegerField(help_text='Number of households in the given demographic in this neighborhood')
+    year = models.ForeignKey('ReportYear', help_text='Year this data was collected')
+
+
+class PopToolTip(models.Model):
+    """ Models popup ToolTip data """
+
+    neighborhood = models.ForeignKey('Neighborhood', on_delete=models.CASCADE,
+                                     help_text='Neighborhood by census tract ')
+    ethnicity = models.CharField(max_length=50,
+                                   help_text='String representation of ethnicity, separate from DemographicByYear')
+    population = models.IntegerField(help_text='Number of individuals of ethnicity in this neighborhood')
+    year = models.ForeignKey('ReportYear', help_text='Year this data was collected')
