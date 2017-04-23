@@ -125,7 +125,7 @@ echo LOAD_DATASOURCES $LOAD_DATASOURCES
 
 * Run `chmod +x backend/bin/env.sh` to make the script file executable
 
-* Create `backend/housing-backend/project_config.py` with the following contents:
+* Create `backend/backend/project_config.py` with the following contents:
 
 ```python
 AWS = {
@@ -138,7 +138,7 @@ AWS = {
     'PASSWORD': '',
     }
 
-DJANGO_SECRET_KEY = '<secretkey>' # Contact DevOps for <secretkey>
+DJANGO_SECRET_KEY = 'notsosecret'
 
 # Note: the 192.168.99.100 enables testing with Docker Toolbox for Mac and Windows
 ALLOWED_HOSTS = ['127.0.0.1',
@@ -148,9 +148,9 @@ ALLOWED_HOSTS = ['127.0.0.1',
 
 #### 2. Setup your local environment
 
-* Run `source env.sh` to setup your environment
+* Run `source backend/bin/env.sh` to setup your environment
 
-#### 3. (Optiona) Build & test the container services
+#### 3. (Optional) Build & test the container services
 
 * Run `backend/bin/build-proj.sh -l` to build your container locally
 * Run `backend/bin/test-proj.sh -l` to test your container locally
@@ -169,11 +169,11 @@ ALLOWED_HOSTS = ['127.0.0.1',
 
 * After Step 4. the start-proj.sh will run the services via docker-compose up
 * Open another terminal and change to the `housing-backend` directory
-* Run `backend/bin/env.sh` to prepare the environment
+* Run `source backend/bin/env.sh` to prepare the environment
 
 ### Container access examples:
 
-Run manage.py command directly:
+Run a Django manage.py command directly:
 
 ```
 cd backend
@@ -183,6 +183,7 @@ docker-compose -f local-docker-compose.yml exec housing-service ./manage.py <com
 Run the Python shell:
 
 ```
+cd backend
 docker-compose -f local-docker-compose.yml exec housing-service ./manage.py shell
 ```
 
