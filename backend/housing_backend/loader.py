@@ -117,10 +117,10 @@ def loadHHToolTip(file):
         n, _ = Neighborhood.objects.get_or_create(name=row['NP_ID'])
 
         this_tooltip = HHToolTip(
-                                    neighborhood=n,
-                                    year=ry,
-                                    demographic=row['Demographic'],
-                                    households=row['Households']
+                                neighborhood=n,
+                                year=ry,
+                                demographic=row['Demographic'],
+                                households=row['Households']
                                 )
 
         this_tooltip.save()
@@ -135,11 +135,11 @@ def loadPopToolTip(file):
         n, _ = Neighborhood.objects.get_or_create(NP_ID=row['NP_ID'])
 
         this_tooltip = PopToolTip(
-            neighborhood=n,
-            year=ry,
-            ethnicity=row['Ethnicity'],
-            population=row['Population']
-        )
+                                neighborhood=n,
+                                year=ry,
+                                ethnicity=row['Ethnicity'],
+                                population=row['Population']
+                                )
 
         this_tooltip.save()
 
