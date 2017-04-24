@@ -72,7 +72,7 @@ class HousingSize(models.Model):
 
       
 class Neighborhood(models.Model):
-    NP_ID = models.IntegerField(null=False, help_text='Unique ID different than django ORM pk')
+    NP_ID = models.IntegerField(null=False, default=-1, help_text='Unique ID different than django ORM pk')
     name = models.CharField(max_length=50, help_text='Neighborhood Name')
 
     #shape_file = models.FieldFile() possibility if shape file data needs to be stored
