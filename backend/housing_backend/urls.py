@@ -10,7 +10,10 @@ urlpatterns = [
     url(r'^affordable/$', views.AffordableList.as_view(), name='affordable_list'),
     url(r'^affordable/(?P<pk>[0-9]+)/$', views.AffordableDetail.as_view(), name='affordable_detail'),
     url(r'^rent/$', views.RentList.as_view(), name='rent_list'),
-    url(r'^$', schema_view),
+    url(r'^prodvscost/$', views.ProdVsCostList.as_view(), name='prod_vs_cost'),
+    url(r'^hhtooltip/$', views.HHToolTip.as_view(), name='hhtooltip'),
+    url(r'^poptooltip/$', views.PopToolTip.as_view(), name='poptooltip'),
+    url(r'^$', schema_view)
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

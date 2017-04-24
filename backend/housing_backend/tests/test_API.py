@@ -37,11 +37,11 @@ class AffordableListEndpointTest(APITestCase):
         # Ensure that API returns values matching the object we just saved
         self.assertEqual(response.data[0]['affordable'], this_object.affordable,
                          'API response value should match inserted model value')
-        self.assertEqual(response.data[0]['demographic']['name'], this_object.demographic.name,
+        self.assertEqual(response.data[0]['demographic'], this_object.demographic.name,
                          'API response value should match inserted model value')
-        self.assertEqual(response.data[0]['housing_size']['household_type'], this_object.housing_size.household_type,
+        self.assertEqual(response.data[0]['housing_size'], this_object.housing_size.household_type,
                          'API response value should match inserted model value')
-        self.assertEqual(response.data[0]['neighborhood']['name'], this_object.neighborhood.name,
+        self.assertEqual(response.data[0]['neighborhood'], this_object.neighborhood.name,
                          'API response value should match inserted model value')
 
     def test_affordable_list_endpoint_returns_all_objects(self):
@@ -67,7 +67,7 @@ class AffordableListEndpointTest(APITestCase):
         self.assertEqual(len(response.data), 5, "Should return 5 item list")
 
         # Test that each object is included in the returned response
-        result_demographic_names = [item['demographic']['name'] for item in response.data]
+        result_demographic_names = [item['demographic'] for item in response.data]
         for obj in these_objects:
             self.assertTrue(obj.demographic.name in result_demographic_names,
                             'Demographic name should be in list of results')
@@ -96,14 +96,9 @@ class AffordableDetailEndpointTest(APITestCase):
         # Ensure that API returns values matching the object we just saved
         self.assertEqual(response.data['affordable'], this_object.affordable,
                          'API response value should match inserted model value')
-        self.assertEqual(response.data['demographic']['name'], this_object.demographic.name,
+        self.assertEqual(response.data['demographic'], this_object.demographic.name,
                          'API response value should match inserted model value')
-        self.assertEqual(response.data['housing_size']['household_type'], this_object.housing_size.household_type,
+        self.assertEqual(response.data['housing_size'], this_object.housing_size.household_type,
                          'API response value should match inserted model value')
-        self.assertEqual(response.data['neighborhood']['name'], this_object.neighborhood.name,
+        self.assertEqual(response.data['neighborhood'], this_object.neighborhood.name,
                          'API response value should match inserted model value')
-
-
-
-
-

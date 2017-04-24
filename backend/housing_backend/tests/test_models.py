@@ -2,7 +2,8 @@
 
 import pytest
 from mixer.backend.django import mixer
-from housing_backend.models import Affordable, Demographic, HousingSize, Neighborhood, ReportYear
+from housing_backend.models import Affordable, Demographic, HousingSize, Neighborhood, ReportYear,\
+                                   HousingSupply, HousingPermits, HousingProductionVsCost
 from django.db import models
 
 
@@ -190,3 +191,51 @@ class TestReportYear:
         this_obj = mixer.blend('housing_backend.ReportYear')
 
         assert this_obj.__repr__() == str(this_obj.year), "Should return string of ReportYear.year"
+
+
+class TestHousingSupply:
+    def test_model_creation(self):
+        """ Test creation and saving of HousingSupply model """
+
+        this_obj = mixer.blend('housing_backend.HousingSupply')
+        assert this_obj.pk == 1, 'Should create a post instance with pk 1'
+        assert isinstance(this_obj, HousingSupply), 'Should create an instance of HousingSupply model'
+
+    def test_model_has_custom_str_method(self):
+        """ Test __str__ method of HousingSupply model is different than models.Model.__str__"""
+
+        assert HousingSupply.__str__ is not models.Model.__str__, "__str__ method should have been overridden"
+
+    def test_model_has_custom_repr_method(self):
+        """ Test __repr__ method of HousingSupply model is different than models.Model.__repr__"""
+
+        assert HousingSupply.__repr__ is not models.Model.__repr__, "__repr__ method should have been overridden"
+
+
+class TestHousingPermits:
+    def test_model_creation(self):
+        """ Test creation and saving of HousingPermits model """
+
+        this_obj = mixer.blend('housing_backend.HousingPermits')
+        assert this_obj.pk == 1, 'Should create a post instance with pk 1'
+        assert isinstance(this_obj, HousingPermits), 'Should create an instance of HousingSupply model'
+
+    def test_model_has_custom_str_method(self):
+        """ Test __str__ method of HousingPermits model is different than models.Model.__str__"""
+
+        assert HousingPermits.__str__ is not models.Model.__str__, "__str__ method should have been overridden"
+
+    def test_model_has_custom_repr_method(self):
+        """ Test __repr__ method of HousingPermits model is different than models.Model.__repr__"""
+
+        assert HousingPermits.__repr__ is not models.Model.__repr__, "__repr__ method should have been overridden"
+
+class TestHousingProductionVsCost:
+    def test_model_creation(self):
+        """ Test creation and saving of HousingProductionVsCost model """
+
+        this_obj = mixer.blend('housing_backend.HousingProductionVsCost')
+        assert this_obj.pk == 1, 'Should create an instance with pk 1'
+        assert isinstance(this_obj, HousingProductionVsCost), 'Should create an instance of ProductionVsCost model'
+
+    #TODO Moar tests here
