@@ -56,7 +56,10 @@ def loadDemoByYear(file):
             demo_by_year.save()
 
 def loadNeighborhoodRent(file):
-    dframe = pd.read_csv(file)
+    df = pd.read_csv(file)
+
+    # Convert NaN values to None for db insert
+    dframe = df.where((pd.notnull(df)), None)
 
     for index, row in dframe.iterrows():
         ry, _ = ReportYear.objects.get_or_create(year=row['NHM_ReportYear'])
@@ -154,12 +157,15 @@ def loadProdVsCost(file):
         ry, _ = ReportYear.objects.get_or_create(year=row['ReportYear'])
         n, _ = Neighborhood.objects.get_or_create(NP_ID=row['NP_ID'], name=row['Neighborhood'])
 
-        this_prodvscost = HousingProductionVsCost(        year=ry,
+        this_prodvscost = HousingProductionVsCost(
+                                                year=ry,
                                                 neighborhood=n,
-                                                single_unit_growth=row['%GrowthSFY_Stacked'],
-                                                multi_unit_growth=row['%GrowthMFY_Stacked'],
-                                                home_price_growth=row['%GrowthMedianHomePrice'],
-                                                rent_growth=row['%GrowthEffectiveRent'],
+                                                weighting_factor = row['TotalUnits(WeightingFactor)'],
+                                                single_unit_growth=row['Weighted_%GrowthSFYUnitsStacked'],
+                                                multi_unit_growth=row['Weighted_%GrowthMFYUnitsStacked'],
+                                                home_price_growth=row['Weighted_%GrowthMedianHomePrice'],
+                                                rent_growth=row['Weighted_%GrowthRent'],
+                                                msa_growth=row['MSA_%Growth']
                                                 )
 
         this_prodvscost.save()

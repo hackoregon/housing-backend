@@ -40,7 +40,9 @@ class ProdVsCostSerializer(serializers.ModelSerializer):
                 'single_unit_growth',
                 'multi_unit_growth',
                 'home_price_growth',
-                'rent_growth'
+                'rent_growth',
+                'msa_growth',
+                'weighting_factor'
                 )
 
 
