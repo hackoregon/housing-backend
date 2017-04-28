@@ -26,9 +26,9 @@ class Affordable(models.Model):
 
 
 class NeighborhoodRent(models.Model):
-    nh_id = models.ForeignKey('Neighborhood', on_delete=models.CASCADE)
+    neighborhood = models.ForeignKey('Neighborhood', on_delete=models.CASCADE)
     housing_size = models.ForeignKey('HousingSize', on_delete=models.CASCADE)
-    rent_amt = models.IntegerField(default=0)
+    rent_amt = models.IntegerField(default=0, null=True)
     year = models.ForeignKey('ReportYear', on_delete=models.CASCADE, help_text='Year for this rent sample', null=True)
     
    
@@ -121,10 +121,14 @@ class HousingProductionVsCost(models.Model):
 
     year = models.ForeignKey('ReportYear', on_delete=models.CASCADE)
     neighborhood = models.ForeignKey('Neighborhood', on_delete=models.CASCADE, help_text='Neighborhood by census tract')
-    single_unit_growth = models.FloatField(help_text="Single-family unit percent growth vs previous year")
-    multi_unit_growth = models.FloatField(help_text="Multi-family unit percent growth vs previous year")
-    home_price_growth = models.FloatField(help_text="Home price percent growth vs previous year")
-    rent_growth = models.FloatField(help_text="Rent percent growth vs previous year")
+    weighting_factor = models.IntegerField(null=True, help_text="Total units per neighborhood per report year")
+    single_unit_growth = models.FloatField(null=True,
+                                           help_text="Single-family unit percent growth vs previous year * total units ")
+    multi_unit_growth = models.FloatField(null=True,
+                                          help_text="Multi-family unit percent growth vs previous year * total units")
+    home_price_growth = models.FloatField(null=True, help_text="Home price percent growth vs previous year")
+    rent_growth = models.FloatField(null=True, help_text="Rent percent growth vs previous year")
+    msa_growth = models.FloatField(null=True, help_text="Metropolitan percentage growth in population")
 
 
 class HHToolTip(models.Model):

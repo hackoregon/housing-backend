@@ -56,7 +56,10 @@ def loadDemoByYear(file):
             demo_by_year.save()
 
 def loadNeighborhoodRent(file):
-    dframe = pd.read_csv(file)
+    df = pd.read_csv(file)
+
+    # Convert NaN values to None for db insert
+    dframe = df.where((pd.notnull(df)), None)
 
     for index, row in dframe.iterrows():
         ry, _ = ReportYear.objects.get_or_create(year=row['NHM_ReportYear'])
@@ -66,7 +69,7 @@ def loadNeighborhoodRent(file):
         n.save()
         h.save()
         rent, _ = NeighborhoodRent.objects.get_or_create(
-                nh_id=n,
+                neighborhood=n,
                 housing_size=h,
                 rent_amt=row['NHM_Rent_Amt'],
                 year=ry,
@@ -144,6 +147,30 @@ def loadPopToolTip(file):
         this_tooltip.save()
 
 
+def loadProdVsCost(file):
+    """ load data into prod vs cost model """
+    df = pd.read_csv(file)
+
+    dframe = df.where((pd.notnull(df)), None)
+
+    for index, row in dframe.iterrows():
+        ry, _ = ReportYear.objects.get_or_create(year=row['ReportYear'])
+        n, _ = Neighborhood.objects.get_or_create(NP_ID=row['NP_ID'], name=row['Neighborhood'])
+
+        this_prodvscost = HousingProductionVsCost(
+                                                year=ry,
+                                                neighborhood=n,
+                                                weighting_factor = row['TotalUnits(WeightingFactor)'],
+                                                single_unit_growth=row['Weighted_%GrowthSFYUnitsStacked'],
+                                                multi_unit_growth=row['Weighted_%GrowthMFYUnitsStacked'],
+                                                home_price_growth=row['Weighted_%GrowthMedianHomePrice'],
+                                                rent_growth=row['Weighted_%GrowthRent'],
+                                                msa_growth=row['MSA_%Growth']
+                                                )
+
+        this_prodvscost.save()
+
+
 fileDemo = "https://raw.githubusercontent.com/hackoregon/housing-backend/datasources/DemographicProfiles_w2015_Profiles_2-15-17.csv"
 fileNeighborhoods = "https://raw.githubusercontent.com/hackoregon/housing-backend/datasources/NeighborhoodProfiles.csv"
 fileAfford = "https://raw.githubusercontent.com/hackoregon/housing-backend/datasources/SoHAffordabilityDatabyNeighborhoodUpload.csv"
@@ -151,6 +178,7 @@ fileRent = "https://raw.githubusercontent.com/hackoregon/housing-backend/datasou
 fileSupply = "https://raw.githubusercontent.com/hackoregon/housing-backend/datasources/HousingSupplyAndPermits.csv"
 fileHHToolTips = "https://raw.githubusercontent.com/hackoregon/housing-backend/datasources/hhToolTips.csv"
 filePopToolTips = "https://raw.githubusercontent.com/hackoregon/housing-backend/datasources/popToolTips.csv"
+fileProdVsCost = "https://raw.githubusercontent.com/hackoregon/housing-backend/datasources/HousingStockandPrices.csv"
 
 # Load year and neighborhood first because loadAffordability depends on it
 loadDemoByYear(fileDemo)
@@ -162,3 +190,4 @@ loadNeighborhoodRent(fileRent)
 loadHousingSupplyandPermits(fileSupply)
 loadHHToolTip(fileHHToolTips)
 loadPopToolTip(filePopToolTips)
+loadProdVsCost(fileProdVsCost)
