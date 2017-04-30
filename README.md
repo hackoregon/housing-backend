@@ -37,6 +37,14 @@ $ git remote add upstream git@github.com:hackoregon/housing-backend.git
 $ git remote add upstream https://github.com/hackoregon/housing-backend.git
 ```
 
+### About the `datasources` branch:
+
+This branch is reserved for the data that populates the database tables. See the branch README for more detail.  
+
+```
+git checkout datasources
+```
+
 ### Do some coding:
 
 Make a feature branch:  
