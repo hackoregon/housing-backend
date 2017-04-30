@@ -124,45 +124,44 @@ echo DEPLOY_TARGET $DEPLOY_TARGET
 
 #### 2. Setup your local environment
 
-* Run `source env.sh` to setup your environment
+* Run `source backend/bin/env.sh` to setup your environment
 
 #### 3. Build the container services
 
-* Run `backend/bin/build-proj.sh -l` to build your container locally
+* From `housing-backend`, run `backend/bin/build-proj.sh -l` to build your container locally
 
 #### 4. Start the project
 
 * Make sure you've got a local copy of your project's `backend/backend/project_config.py` - Contact the DevOps Team
-* Run `backend/bin/start-proj.sh -l`
-* View the API with a web browser and address `localhost:8000/housing/`
+* From `housing-backend`, run `backend/bin/start-proj.sh -l`
+* From a web browser open `localhost:8000/housing/`
 
 ### Shutdown:
 
-* From the terminal session you ran `start-proj.sh` from press `Ctrl+C` or from a separate terminal session: `cd housing-backend/backend` then run `docker-compose -f local-docker-compose.yml down`
+* From the terminal session you ran `start-proj.sh` press `Ctrl+C`
+Or
+* Open a new terminal session
+* `cd housing-backend`
+* From `housing-backend`, run `source backend/bin/env.sh` to setup your environment
+* From `housing-backend/backend`, run `docker-compose -f local-docker-compose.yml down`
 
 ### Rebuild images (necessary if `requirements.txt` changes):
 
-```
-$ docker-compose -f local-docker-compose.yml up --build
-```
+* From `housing-backend/backend`, run `docker-compose -f local-docker-compose.yml up --build`
 
 ### Container access examples:
 
 Run manage.py command directly:
 
-```
-docker-compose -f local-docker-compose.yml exec housing-service ./manage.py <command>
-```
+* From `housing-backend/backend`, run `docker-compose -f local-docker-compose.yml exec housing-service ./manage.py <command>`
 
 Run the Python shell:
 
-```
-docker-compose -f local-docker-compose.yml exec housing-service ./manage.py shell
-```
+* From `housing-backend/backend`, run `docker-compose -f local-docker-compose.yml exec housing-service ./manage.py shell`
 
-## Running the tests
+## Running test automation:
 
-* Run `backend/bin/test-proj.sh -l` to test your container locally
+* From `housing-backend`, run `backend/bin/test-proj.sh -l`
 
 ## Contributing
 
