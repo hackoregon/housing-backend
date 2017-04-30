@@ -120,48 +120,30 @@ echo DEPLOY_TARGET $DEPLOY_TARGET
 
 * Run `chmod +x backend/bin/env.sh` to make the script file executable
 
+* Obtain `project_config.py` from your DevOps contact. Place the file at: `backend/backend`
+
 #### 2. Setup your local environment
 
 * Run `source env.sh` to setup your environment
 
-#### 3. Build & test the container services
+#### 3. Build the container services
 
-* Run `backend/bin/build-proj -l` to build your container locally
-* Run `backend/bin/test-proj -l` to test your container locally
+* Run `backend/bin/build-proj.sh -l` to build your container locally
 
 #### 4. Start the project
 
-* Make sure you've got a local copy of your project's `backend/backend/project_config.py` - Contact the DevOps Team 
-* Run `backend/bin/start-proj -l` to view your service's Swaggerized API
-
-### (troys, original, 15apr) Start:
-
-Run Django and PostgreSQL:
-```
-$ cd housing-backend/backend
-$ docker-compose up
-```
-
-You can also run it in the background:
-```
-$ docker-compose up -d
-```
-It looks like it starts faster this way, but give it a bit to import data into
-the database in the background before trying to view it in a browser.
+* Make sure you've got a local copy of your project's `backend/backend/project_config.py` - Contact the DevOps Team
+* Run `backend/bin/start-proj.sh -l`
+* View the API with a web browser and address `localhost:8000/housing/`
 
 ### Shutdown:
 
-```
-$ docker-compose down
-  # or
-$ docker-compose down --rmi all   # remove images to save disk space
-```
+* From the terminal session you ran `start-proj.sh` from press `Ctrl+C` or from a separate terminal session: `cd housing-backend/backend` then run `docker-compose -f local-docker-compose.yml down`
 
 ### Rebuild images (necessary if `requirements.txt` changes):
 
 ```
-$ docker-compose down   # (if not already shut down)
-$ docker-compose up --build
+$ docker-compose -f local-docker-compose.yml up --build
 ```
 
 ### Container access examples:
@@ -169,56 +151,18 @@ $ docker-compose up --build
 Run manage.py command directly:
 
 ```
-docker-compose exec web ./manage.py <command>
+docker-compose -f local-docker-compose.yml exec housing-service ./manage.py <command>
 ```
 
 Run the Python shell:
 
 ```
-docker-compose exec web ./manage.py shell
+docker-compose -f local-docker-compose.yml exec housing-service ./manage.py shell
 ```
-
-Run the PostgreSQL shell:
-
-```
-docker-compose exec --user postgres db psql
-```
-
-### Develop!
-
-Have at it!
-
-View the API GUI at localhost:8000.
-
-Feel free to explore the [API docs](https://github.com/hackoregon/housing-backend/tree/backend/docs/API.md).
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-See the DevOps page of the [Wiki](https://github.com/hackoregon/housing-backend/wiki) for notes about how to deploy this on a live system
-
-## Built With
-
-See the [Wiki](https://github.com/hackoregon/housing-backend/wiki) for notes about the front-end, datbases, and web framework used for the project
+* Run `backend/bin/test-proj.sh -l` to test your container locally
 
 ## Contributing
 
@@ -242,9 +186,3 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 * **Esme Miller** - *Research Lead*
 
 See also the list of [contributors](https://github.com/hackoregon/housing-backend/contributors) who participated in this project.
-
-## Acknowledgments
-
-* [Crop Compass](http://www.cropcompass.org/)
-* [PlotPDX](http://plotpdx.org)
-* [Programming to Progress](http://www.programmingtoprogress.org/)
