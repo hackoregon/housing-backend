@@ -37,6 +37,14 @@ $ git remote add upstream git@github.com:hackoregon/housing-backend.git
 $ git remote add upstream https://github.com/hackoregon/housing-backend.git
 ```
 
+### About the `datasources` branch:
+
+This branch is reserved for the data that populates the database tables. See the branch README for more detail.  
+
+```
+git checkout datasources
+```
+
 ### Do some coding:
 
 Make a feature branch:  
@@ -90,6 +98,8 @@ $ git branch -a
 
 ## Services Development Environment
 
+These instructions establish local Docker containers and services for development of the API and database.
+
 ### Dependencies
 
 * Docker or Docker toolkit
@@ -120,105 +130,78 @@ echo DEPLOY_TARGET $DEPLOY_TARGET
 
 * Run `chmod +x backend/bin/env.sh` to make the script file executable
 
+At this point you need to determine if you want to run the database locally or reference the one hosted by AWS. This has implications on the degree of changes you can make to the data schema, table contents, and so on. Consult with your DevOps contact for help.
+
+* For maximum control when you want to update or code up a new API endpoint, run with a local database with default credentials. Create `housing-backend/backend/backend/project_config.py` (in the same directory as `settings.py`) with the following contents:
+
+```python
+AWS = {
+    # Settings for dev:
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'NAME': 'postgres',
+    'HOST': 'db',
+    'PORT': '5432',
+    'USER': 'postgres',
+    'PASSWORD': '',
+    }
+
+# Note: the 192.168.99.100 enables testing with Docker Toolbox for Mac and Windows
+ALLOWED_HOSTS = ['127.0.0.1',
+                 'localhost',
+                 '192.168.99.100']
+```
+
+* To run local services that reference the remote live database, Hack Oregon credential are required. This is usually the pattern required for incremental changes to the data loaded into the database tables or to run migrations on the live deployment. Obtain `project_config.py` from your DevOps contact. Place the file at: `housing-backend/backend/backend` (in the same directory as `settings.py`)
+
 #### 2. Setup your local environment
 
-* Run `source env.sh` to setup your environment
+* Run `source backend/bin/env.sh` to setup your environment
 
-#### 3. Build & test the container services
+#### 3. Build the container services
 
-* Run `backend/bin/build-proj -l` to build your container locally
-* Run `backend/bin/test-proj -l` to test your container locally
+* From `housing-backend`, run `backend/bin/build-proj.sh -l` to build your container locally
 
 #### 4. Start the project
 
-* Make sure you've got a local copy of your project's `backend/backend/project_config.py` - Contact the DevOps Team 
-* Run `backend/bin/start-proj -l` to view your service's Swaggerized API
-
-### (troys, original, 15apr) Start:
-
-Run Django and PostgreSQL:
-```
-$ cd housing-backend/backend
-$ docker-compose up
-```
-
-You can also run it in the background:
-```
-$ docker-compose up -d
-```
-It looks like it starts faster this way, but give it a bit to import data into
-the database in the background before trying to view it in a browser.
+* From `housing-backend`, run `backend/bin/start-proj.sh -l`
+* From a web browser open `localhost:8000/housing/`
 
 ### Shutdown:
 
-```
-$ docker-compose down
-  # or
-$ docker-compose down --rmi all   # remove images to save disk space
-```
+* From the terminal session you ran `start-proj.sh` press `Ctrl+C`
+
+Or
+
+* Open a new terminal session
+* From `housing-backend`, run `source backend/bin/env.sh` to setup your environment
+* From `housing-backend/backend`, run `docker-compose -f local-docker-compose.yml down`
 
 ### Rebuild images (necessary if `requirements.txt` changes):
 
-```
-$ docker-compose down   # (if not already shut down)
-$ docker-compose up --build
-```
+* From `housing-backend`, run `source backend/bin/env.sh` to setup your environment
+* From `housing-backend/backend`, run `docker-compose -f local-docker-compose.yml up --build`
 
 ### Container access examples:
 
 Run manage.py command directly:
 
-```
-docker-compose exec web ./manage.py <command>
-```
+* From `housing-backend`, run `source backend/bin/env.sh` to setup your environment
+* From `housing-backend/backend`, run `docker-compose -f local-docker-compose.yml exec housing-service ./manage.py <command>`
 
 Run the Python shell:
 
-```
-docker-compose exec web ./manage.py shell
-```
+* From `housing-backend`, run `source backend/bin/env.sh` to setup your environment
+* From `housing-backend/backend`, run `docker-compose -f local-docker-compose.yml exec housing-service ./manage.py shell`
 
-Run the PostgreSQL shell:
+Make migrations:
 
-```
-docker-compose exec --user postgres db psql
-```
+* From `housing-backend`, run `source backend/bin/env.sh` to setup your environment
+* From `housing-backend/backend`, run `docker-compose -f local-docker-compose.yml exec housing-service ./manage.py makemigrations housing_backend`
 
-### Develop!
+## Running test automation:
 
-Have at it!
-
-View the API GUI at localhost:8000.
-
-Feel free to explore the [API docs](https://github.com/hackoregon/housing-backend/tree/backend/docs/API.md).
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-See the DevOps page of the [Wiki](https://github.com/hackoregon/housing-backend/wiki) for notes about how to deploy this on a live system
-
-## Built With
-
-See the [Wiki](https://github.com/hackoregon/housing-backend/wiki) for notes about the front-end, datbases, and web framework used for the project
+* From `housing-backend`, run `source backend/bin/env.sh` to setup your environment
+* From `housing-backend`, run `backend/bin/test-proj.sh -l`
 
 ## Contributing
 
@@ -242,9 +225,3 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 * **Esme Miller** - *Research Lead*
 
 See also the list of [contributors](https://github.com/hackoregon/housing-backend/contributors) who participated in this project.
-
-## Acknowledgments
-
-* [Crop Compass](http://www.cropcompass.org/)
-* [PlotPDX](http://plotpdx.org)
-* [Programming to Progress](http://www.programmingtoprogress.org/)
