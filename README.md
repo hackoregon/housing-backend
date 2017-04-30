@@ -161,32 +161,38 @@ ALLOWED_HOSTS = ['127.0.0.1',
 ### Shutdown:
 
 * From the terminal session you ran `start-proj.sh` press `Ctrl+C`
+
 Or
+
 * Open a new terminal session
-* `cd housing-backend`
 * From `housing-backend`, run `source backend/bin/env.sh` to setup your environment
 * From `housing-backend/backend`, run `docker-compose -f local-docker-compose.yml down`
 
 ### Rebuild images (necessary if `requirements.txt` changes):
 
+* From `housing-backend`, run `source backend/bin/env.sh` to setup your environment
 * From `housing-backend/backend`, run `docker-compose -f local-docker-compose.yml up --build`
 
 ### Container access examples:
 
 Run manage.py command directly:
 
+* From `housing-backend`, run `source backend/bin/env.sh` to setup your environment
 * From `housing-backend/backend`, run `docker-compose -f local-docker-compose.yml exec housing-service ./manage.py <command>`
 
 Run the Python shell:
 
+* From `housing-backend`, run `source backend/bin/env.sh` to setup your environment
 * From `housing-backend/backend`, run `docker-compose -f local-docker-compose.yml exec housing-service ./manage.py shell`
 
 Make migrations:
 
+* From `housing-backend`, run `source backend/bin/env.sh` to setup your environment
 * From `housing-backend/backend`, run `docker-compose -f local-docker-compose.yml exec housing-service ./manage.py makemigrations housing_backend`
 
 ## Running test automation:
 
+* From `housing-backend`, run `source backend/bin/env.sh` to setup your environment
 * From `housing-backend`, run `backend/bin/test-proj.sh -l`
 
 ## Contributing
